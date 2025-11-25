@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tecnocam</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="tecnocam"> <!--Parte de cima header-->
+        <img src="img/logo.png" alt="" class="logo">
+            <h1>Tecnocam</h1>
+        <div class="search">
+                <label for="searchInput">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <a href="suporte.html" rel="noopener noreferrer">
+                <img src="img/suport.svg" alt="" class="h-icon1">
+            </a>
+            <a href="login.html"><img src="img/login.svg" alt="" class="h-icon2"></a>
+            <a href="meus-pedidos.html"><img src="img/carrinho.svg" alt="" class="h-icon3"></a>
+        </div>
+
+        <div> 
+            <nav class="navbar"> <!--Navbar-->
+                <div class="menu-container">
+                    <img src="img/menu.svg" alt="menu" class="menu-icon">
+                    <div class="dropdown-menu">
+                        <a href="minha-conta.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">person</span>
+                            Minha Conta
+                        </a>
+                        <a href="meus-pedidos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">shopping_bag</span>
+                            Meus Pedidos
+                        </a>
+                        <a href="favoritos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">favorite</span>
+                            Favoritos
+                        </a>
+                        <a href="ajuda.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">help</span>
+                            Ajuda
+                        </a>
+                        <a href="suporte.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">support_agent</span>
+                            Suporte Técnico
+                        </a>
+                        <button class="dropdown-item theme-toggle-btn" id="themeToggle">
+                            <span class="material-symbols-outlined dropdown-icon">dark_mode</span>
+                            Modo Escuro
+                        </button>
+
+                    </div>
+                </div>
+                <a href="#todas-categorias" class="nav-links">Todas as categorias</a>
+                <a href="#mais-vendidos" class="nav-links">Mais vendidos</a>
+                <a href="#casa-inteligente" class="nav-links">Casa Inteligente</a>
+                <a href="#interfones" class="nav-links">Interfones</a>
+                <a href="#cameras" class="nav-links">Câmeras</a>
+                <p>|</p>
+                <a href="#kits" class="nav-links">Kits</a>
+                <a href="#instalacao" class="nav-link">Instalação</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class=""> <!--Carrossel-->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide active">
+                    <img src="img/banner1.svg" alt="Banner 1">
+                </div>
+                <div class="slide">
+                    <img src="img/banner2.svg" alt="Banner 2">
+                </div>
+                <div class="slide">
+                    <img src="img/banner3.svg" alt="Banner 3">
+                </div>
+                <div class="slide">
+                    <img src="img/banner4.svg" alt="Banner 4">
+                </div>
+            </div>
+            <div class="carousel-buttons">
+            <span class="material-symbols-outlined prev">navigate_before</span>
+            <span class="material-symbols-outlined dot active" data-slide="0">circle</span>
+            <span class="material-symbols-outlined dot" data-slide="1">circle</span>
+            <span class="material-symbols-outlined dot" data-slide="2">circle</span>
+            <span class="material-symbols-outlined dot" data-slide="3">circle</span>
+            <span class="material-symbols-outlined next">navigate_next</span>
+            </div>
+        </div>
+        
+    </section>
+
+    <section> <!--Produtos-->
+        <div class="produtos">
+            <div class="produto">
+                <p>Fechaduras digitais</p>
+                <img src="img/fechadura.svg" alt="">
+            </div>
+            <div class="produto">
+                <p>Câmeras wi-fi</p>
+                <img src="img/camera.svg" alt="">
+            </div>
+            <div class="produto">
+                <p>Telefones</p>
+                <img src="img/telefone.svg" alt="">
+            </div>
+            <div class="produto">
+                <p>Roteadores</p>
+                <img src="img/roteador.svg" alt="">
+            </div>
+            <div class="produto">
+                <p>DVR's</p>
+                <img src="img/dvr.svg" alt="">
+            </div>
+            <div class="produto">
+                <p>Interruptores</p>
+                <img src="img/tomada.svg" alt="">
+            </div>
+            <div class="produto">
+                <p>No breaks</p>
+                <img src="img/nobreak.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section> <!--caracteristicas-->
+        <div class="caracteristicas">
+            <div class="caracterista">
+                <img src="img/aproved.svg" alt="" class="aproved">
+                <h3 class="tc">
+                    Loja oficial
+                    <br>
+                    <p class="pc">Produtos com <br>selo de originalidade <br>e proteção</p>
+                </h3>
+                <img src="img/credit.svg" alt="" class="aproved">
+                <h3 class="tc">
+                    Parcelamento
+                    <br>
+                    <p class="pc">Parcele suas <br>compras em até <br>12x sem juros no cartão</p>
+                </h3>
+                <img src="img/truck.svg" alt="" class="aproved">
+                <h3 class="tc">
+                    Frete Grátis
+                    <br>
+                    <p class="pc">Frete grátis <br>em todo o <br>Brasil</p>
+                </h3>
+                <img src="img/pix.svg" alt="" class="aproved">
+                <h3 class="tc">
+                    Pix
+                    <br>
+                    <p class="pc">10% de desconto <br>em compras de <br>alguns produtos</p>
+                </h3>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="mais-vendidos" class="mais-vendidos"> <!--Mais vendidos-->
+        <div class="container"> 
+            <h2 class="section-title">Mais Vendidos</h2>
+            <div id="products-grid" class="products-grid"> <!-- Produtos estáticos inseridos diretamente no HTML -->
+                <article class="product-card">
+                    <div class="img-wrap">
+                        <a href="camera.html"><img class="product-img" src="img/im7.png" alt="Câmera Inteligente IM7">
+                    </div>
+                    <div class="title">Câmera Inteligente IM7 + 3MP Branca Tecnocam</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 679,90</span>
+                        <span class="discount-badge">41% OFF</span>
+                    </div>
+                    <div class="price">R$ 401,14</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="img-wrap">
+                        <a href="roteador.html"><img class="product-img" src="img/roteador.png" alt="Câmera Full HD 360º">
+                    </div>
+                    <div class="title">Roteador Wireless Tecnocam RF 301k Preto</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 212,59</span>
+                        <span class="discount-badge">18% OFF</span>
+                    </div>
+                    <div class="price">R$ 180,16</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="img-wrap">
+                        <a href="telefone.html"><img class="product-img" src="img/telef3.png" alt="Telefone sem fio">
+                    </div>
+                    <div class="title">Telefone sem Fio Tecnocam TS 3110 Preto</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 200,87</span>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="price">R$ 182,61</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="img-wrap">
+                        <a href="camwifi.html"><img class="product-img" src="img/bullet.png" alt="Câmera IM7 3MP">
+                    </div>
+                    <div class="title">Câmera Inteligente Wi-Fi iM5 SC Full HD Tecnocam</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 561,90</span>
+                        <span class="discount-badge">43% OFF</span>
+                    </div>
+                    <div class="price">R$ 351,90</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="casa-inteligente" class="mais-vendidos1"> <!--Casa Inteligente-->
+        <div class="container">
+            <h2 class="section-title">Casa Inteligente</h2>
+            <div id="products-grid" class="products-grid">
+                <!-- Produtos estáticos inseridos diretamente no HTML -->
+                <article class="product-card"> <!--fechadura-->
+                    <div class="img-wrap">
+                        <a href="fechadura.html"><img class="product-img" src="img/fechadura.png" alt="Câmera Inteligente IM7">
+                    </div>
+                    <div class="title">Fechadura Smart Ifr 7000 Com Maçaneta Tecnocam</div></a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 679,90</span>
+                        <span class="discount-badge">41% OFF</span>
+                    </div>
+                    <div class="price">R$ 401,14</div>
+                </article>
+
+                <article class="product-card"> <!--wibi-->
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/twibi.png" alt="Câmera Full HD 360º">
+                    </div>
+                    <div class="title">Extensor wi-fi  5 twibi force plug giga</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 369,90</span>
+                        <span class="discount-badge">18% OFF</span>
+                    </div>
+                    <div class="price">R$ 247,32</div>
+                </article>
+
+                <article class="product-card"> <!--roteador-->
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/roteadorwi.png" alt="Telefone sem fio">
+                    </div>
+                    <div class="title">Roteador wi-fi 4 RF 301k preto</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 320,67</span>
+                        <span class="discount-badge">47% OFF</span>
+                    </div>
+                    <div class="price">R$ 152,61</div>
+                </article>
+
+                <article class="product-card"> <!--interruptor-->
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/interruptor.png" alt="Câmera IM7 3MP">
+                    </div>
+                    <div class="title">Interruptor smart wifi touch 6 teclas EWS 1006</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 890,86</span>
+                        <span class="discount-badge">60% OFF</span>
+                    </div>
+                    <div class="price">R$ 229,90</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="interfones" class="mais-vendidos">  <!--Interfones-->
+        <div class="container">
+            <h2 class="section-title">Interfones</h2>
+            <div id="products-grid" class="products-grid">
+                <article class="product-card"> <!--terminal dedicado-->
+                    <div class="img-wrap">
+                        <a href="camera.html"><img class="product-img" src="img/terminalxpe.png" alt="Câmera Inteligente IM7">
+                    </div>
+                    <div class="title">Terminal dedicado eletronico de uma tecla</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 679,90</span>
+                        <span class="discount-badge">41% OFF</span>
+                    </div>
+                    <div class="price">R$ 447,89</div>
+                </article>
+
+                <article class="product-card"> <!--terminal dedicado 2-->
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/terminal xpe13.png" alt="Câmera Full HD 360º">
+                    </div>
+                    <div class="title">Terminal dedicado eletronico de 13 teclas</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 699,99</span>
+                        <span class="discount-badge">18% OFF</span>
+                    </div>
+                    <div class="price">R$ 511,98</div>
+                </article>
+
+                <article class="product-card"> <!--ramal  externo-->
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/ramaltis.png" alt="Telefone sem fio">
+                    </div>
+                    <div class="title">Ramal externo sem fio TIS 5000 tecnocam</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 789,90</span>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="price">R$ 387,90</div>
+                </article>
+
+                <article class="product-card"> <!--módulo externo-->
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/módulo.png" alt="Câmera IM7 3MP">
+                    </div>
+                    <div class="title">Módulo externo de videoporteiro wT7</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 1.178,99</span>
+                        <span class="discount-badge">37% OFF</span>
+                    </div>
+                    <div class="price">R$ 920,43</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="cameras" class="mais-vendidos1"> <!--Camêras-->
+        <div class="container">
+            <h2 class="section-title">Câmeras</h2>
+            <div id="products-grid" class="products-grid">
+                <!-- Produtos estáticos inseridos diretamente no HTML -->
+                <article class="product-card">
+                    <div class="img-wrap">
+                        <a href="camera.html"><img class="product-img" src="img/im7.png" alt="Câmera Inteligente IM7">
+                    </div>
+                    <div class="title">Câmera Inteligente IM7 + 3MP Branca Tecnocam</div>
+                </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 679,90</span>
+                        <span class="discount-badge">41% OFF</span>
+                    </div>
+                    <div class="price">R$ 401,14</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/im4.png" alt="Câmera Full HD 360º">
+                    </div>
+                    <div class="title">Roteador Wireless Tecnocam RF 301k Preto</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 212,59</span>
+                        <span class="discount-badge">18% OFF</span>
+                    </div>
+                    <div class="price">R$ 180,16</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/vhl.png" alt="Telefone sem fio">
+                    </div>
+                    <div class="title">Telefone sem Fio Tecnocam TS 3110 Preto</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 200,87</span>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="price">R$ 182,61</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/bullet.png" alt="Câmera IM7 3MP">
+                    </div>
+                    <div class="title">Câmera Inteligente Wi-Fi iM5 SC Full HD Tecnocam</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 517,90</span>
+                        <span class="discount-badge">37% OFF</span>
+                    </div>
+                    <div class="price">R$ 322,12</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="kits" class="mais-vendidos"> <!--Kits-->
+        <div class="container">
+            <h2 class="section-title">Kits</h2>
+            <div id="products-grid" class="products-grid">
+                <article class="product-card"> <!--kit camera-->
+                    <div class="img-wrap">
+                        <a href="#"><img class="product-img" src="img/kitcamera.png" alt="Câmera Inteligente IM7">
+                    </div>
+                    <div class="title">Kit Câmera Inteligente Full HD IME 360 C - 2 Unidades</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 879,60</span>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="price">R$ 791,64</div>
+                </article>
+
+                <article class="product-card"> <!--kit fechadura-->
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/kitfecha.png" alt="Câmera Full HD 360º">
+                    </div>
+                    <div class="title">Kit Fechadura Inteligente Intelbras 7000 + Hub 1001 + Conjunto Twibi</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 2.249,70</span>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="price">R$ 1.1822.26</div>
+                </article>
+
+                <article class="product-card"> <!--kit casa-->
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/kitcasa.png" alt="Telefone sem fio">
+                    </div>
+                    <div class="title">Kit Casa Inteligente Speaker + Lâmpada Smart + Controle Remoto</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 800,87</span>
+                        <span class="discount-badge">13% OFF</span>
+                    </div>
+                    <div class="price">R$ 669,33</div>
+                </article>
+
+                <article class="product-card"> <!--kit sd-->
+                    <div class="img-wrap">
+                        <a href=""><img class="product-img" src="img/kitsd.png" alt="Câmera IM7 3MP">
+                    </div>
+                    <div class="title">Kit Cartão de Memória Micro SD Purple 32GB - 3 Unidades</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 140,70</span>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="price">R$ 126,63</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="instalacao" class="mais-vendidos1"> <!--Instalação-->
+        <div class="container">
+            <h2 class="section-title">Instalação</h2>
+            <div id="products-grid" class="products-grid">
+                <article class="product-card"> <!--ins fechadura-->
+                    <div class="img-wrap">
+                        <a href="#"><img class="product-img" src="img/insfecha.png" alt="Câmera Inteligente IM7" id="kitimg">
+                    </div>
+                    <div class="title">Instalação de Fechadura Smart</div></a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 499,90</span>
+                        <span class="discount-badge">50% OFF</span>
+                    </div>
+                    <div class="price">R$ 249,95</div>
+                </article>
+
+                <article class="product-card"> <!--ins porteiro-->
+                    <div class="img-wrap">
+                        <a href="#"><img class="product-img" src="img/insport.png" alt="Câmera Full HD 360º" id="kitimg">
+                    </div>
+                    <div class="title">Instalação de Porteiro</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 350,00</span>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="price">R$ 315,00</div>
+                </article>
+
+                <article class="product-card"> <!--ins wibi-->
+                    <div class="img-wrap">
+                        <a href="#"><img class="product-img" src="img/inswibi.png" alt="Telefone sem fio" id="kitimg">
+                    </div>
+                    <div class="title">Instalação Roteador Twibi</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 180,00</span>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+                    <div class="price">R$ 162,00</div>
+                </article>
+
+                <article class="product-card"> <!--ins cam wifi-->
+                    <div class="img-wrap">
+                        <a href="#"><img class="product-img" src="img/inswifi.png" alt="Câmera IM7 3MP" id="kitimg">
+                    </div>
+                    <div class="title">Instalação Câmera Wi-Fi</div>
+                    </a>
+                    <div class="pricing">
+                        <span class="old-price">R$ 180,00</span>
+                        <span class="discount-badge"> 50% OFF</span>
+                    </div>
+                    <div class="price">R$ 90,00</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"> <!--Footer-->
+    <div class="footer-container">
+        <!-- Redes Sociais no topo -->
+        <div class="footer-social">
+            <h3 class="social-title">Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" id="facebook">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tecnocam2025" class="social-icon1" target="_blank" id="instagram">
+                    <img src="img/ins.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" class="social-icon1" target="_blank" id="youtube">
+                    <img src="img/you.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/feed" class="social-icon" target="_blank" id="linkedin">
+                    <img src="img/link.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal do Footer -->
+        <div class="footer-content">
+            <!-- Coluna Institucional -->
+            <div class="footer-column">
+                <h3 class="footer-title">Institucional</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Sobre a Tecnocam</a></li>
+                    <li><a href="#" class="footer-link">Responsabilidade Social</a></li>
+                    <li><a href="#" class="footer-link">Meio Ambiente</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Políticas -->
+            <div class="footer-column">
+                <h3 class="footer-title">Políticas</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link">Políticas de Entrega</a></li>
+                    <li><a href="#" class="footer-link">Política de Troca e Devolução</a></li>
+                    <li><a href="#" class="footer-link">Política de Pagamento</a></li>
+                    <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Regulamentos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Atendimento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Fale Conosco</a></li>
+                    <li class="footer-contact">(55) 3281-9730 | tecnocam@</li>
+                    <li class="footer-contact">Seg/Sex - 8h00 às 17h30</li>
+                </ul>
+            </div>
+
+            <!-- Coluna Pagamento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"><img src="img/visa.png" alt=""></div>
+                    <div class="payment-icon mastercard"><img src="img/master.png" alt=""></div>
+                    <div class="payment-icon elo"><img src="img/elo.png" alt=""></div>
+                    <div class="payment-icon pix"><img src="img/pix.png" alt=""></div>
+                    <div class="payment-icon boleto"><img src="img/boleto.png" alt=""></div>
+                    <div class="payment-icon nubank"><img src="img/nua.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+
+    <div> <!--Simbolo Whatsapp-->
+        <a href="https://api.whatsapp.com/send?phone=&text=Quero%20fazer%20um%20agendamento%20hoje!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="img/whatssapp.svg" alt="btn whatssapp"><span class="tooltip-text">Agende seu horário</span></a>
+    </div>
+</body>
+</html>

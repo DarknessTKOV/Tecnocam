@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6, span, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--bege-claro) !important;
+    color: var(--preto-carvao);
+}
+
+body.dark-mode .orders-content{
+    background: var(--bege-claro);
+    color: var(--preto-btn);
+}
+body.dark-mode .filter-btn{
+    background: var(--bege-claro);
+    color: var(--preto-btn);
+    border: 1px solid var(--dourado);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+body.dark-mode .filter-btn.active,
+body.dark-mode .filter-btn:hover {
+    background: var(--bege-claro);
+    color: var(--preto-btn);
+    border-color: var(--dourado); 
+    box-shadow: var(--dourado) 0px 0px 10px;
+    transform: scale(1.03);
+}
+
+body.dark-mode .btn-primary{
+    background: var(--cinza-areia);
+    color: var(--verde-valor);
+}
+
+body.dark-mode .user-avatar {
+    background: var(--bege-claro);
+    color: var(--kosmo-blue);
+    box-shadow: var(--sombra) 0px 0px 10px;
+}
+
+body.dark-mode .order-status.delivered {
+    background: var(--bege-claro);
+    color: var(--verde-valor);
+    box-shadow: var(--verde-valor) 0px 0px 10px;
+}
+body.dark-mode .order-status.shipping {
+    background: var(--bege-claro);
+    color: var(--kosmo-blue);
+    box-shadow: var(--kosmo-blue) 0px 0px 10px;
+}
+body.dark-mode .order-status.pending {
+    background: var(--bege-claro);
+    color: var(--laranja-valor);
+    box-shadow: var(--laranja-valor) 0px 0px 10px;
+}
+body.dark-mode .order-status.cancelled {
+    background: var(--bege-claro);
+    color: var(--vermelho-valor);
+    box-shadow: var(--vermelho-curtir) 0px 0px 10px;
+}
+body.dark-mode .btn-primary{
+    background: var(--background);
+    color: var(--verde-valor);
+}
+body.dark-mode .btn-primary:hover {
+    background: var(--bege-claro);
+    color: var(--verde-valor);
+    box-shadow: var(--verde-valor) 0px 0px 10px;
+    transform: scale(1.03);
+}
+body.dark-mode .btn-secondary{
+    background: var(--bege-claro);
+    color: var(--preto-btn);
+    border: 1px solid var(--kosmo-blue);
+}
+body.dark-mode .btn-secondary:hover {
+    border-color: var(--preto-btn);
+    background: var(--bege-claro);
+    color: var(--preto-btn);
+    box-shadow: var(--preto-btn) 0px 0px 10px;
+    transform: scale(1.03);
+}
+body.dark-mode .sidebar-menu a{
+    background: var(--bege-claro);
+    color: var(--verde-valor);
+    transition: all 0.3s ease;
+}
+body.dark-mode .sidebar-menu a:hover,
+body.dark-mode .sidebar-menu a.active {
+    background: var(--verde-valor);
+    color: white;
+    box-shadow: var(--verde-valor) 0px 0px 10px;
+    transform: scale(1.03);
+}
+body.dark-mode .orders-sidebar{
+    background: var(--background); 
+}
+
+body.dark-mode .order-card{
+    border: 1px solid var(--dourado);
+    box-shadow: var(--dourado) 0px 0px 5px;
+}
+body.dark-mode .back-button{
+    background-color: var(--kosmo-blue);
+    transition: all 0.3s ease;
+}
+body.dark-mode .back-button:hover{
+    background-color: var(--azul-titulo);
+    box-shadow: var(--azul-titulo) 0px 0px 10px;
+}
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #2c5aa0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-left:130px;
+    margin-top: 80px;
+    font-size: 15px;
+}
+        
+.back-button:hover {
+    background-color: #1e3f73;
+    transform: translateY(-2px);
+}
+        
+.back-icon {
+    width: 16px;
+    height: 16px;
+}    
+/* Meus Pedidos Styles */
+.orders-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.orders-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.orders-header h1 {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 36px;
+    color: var(--azul-titulo);
+    margin-bottom: 10px;
+}
+
+.orders-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+}
+
+.orders-sidebar {
+    background: var(--bege-claro);
+    border-radius: 20px;
+    padding: 30px;
+    height: fit-content;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--cinza-areia);
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--dourado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 5px;
+}
+
+.user-email {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: var(--preto-carvao);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+    background: white;
+    color: var(--dourado);
+}
+
+.sidebar-menu .material-symbols-outlined {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.orders-content {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: var(--sombra);
+}
+
+.section-title {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 24px;
+    color: var(--azul-titulo);
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--dourado);
+    padding-bottom: 10px;
+}
+
+.order-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--cinza-areia);
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--preto-btn);
+    color: var(--verde-valor);
+    border-color: var(--preto-btn);
+}
+
+.order-card {
+    border: 1px solid var(--cinza-areia);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.order-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--cinza-areia);
+}
+
+.order-info {
+    flex: 1;
+}
+
+.order-number {
+    font-weight: 700;
+    color: var(--preto-carvao);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.order-date {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.order-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.order-status.delivered {
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+.order-status.shipping {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.order-status.pending {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.order-status.cancelled {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.order-items {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--cinza-areia);
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--bege-claro);
+    padding: 5px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.item-quantity {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.item-price {
+    font-weight: 700;
+    color: var(--verde-valor);
+    font-size: 16px;
+}
+
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid var(--cinza-areia);
+}
+
+.order-total {
+    font-size: 18px;
+    color: var(--preto-carvao);
+}
+
+.order-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary {
+    background: var(--preto-btn);
+    color: var(--verde-valor);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background: var(--verde-valor);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--preto-carvao);
+    border: 1px solid var(--cinza-areia);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    border-color: var(--preto-carvao);
+    background: var(--preto-carvao);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .orders-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .orders-sidebar {
+        order: 2;
+    }
+    
+    .orders-content {
+        order: 1;
+        padding: 20px;
+    }
+    
+    .order-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .order-footer {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .order-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .item-price {
+        align-self: flex-end;
+    }
+}
+
+.breadcrumb-link img{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 30px;
+}

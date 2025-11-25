@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guias para Câmeras - Tecnocam</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="suporte.css">
+    <link rel="stylesheet" href="guias.css">
+    <script src="./main.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="tecnocam"> <!--Parte de cima header-->
+        <img src="img/logo.png" alt="" class="logo">
+            <h1>Tecnocam</h1>
+        <div class="search">
+                <label for="searchInput">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <a href="suporte.html" rel="noopener noreferrer">
+                <img src="img/suport.svg" alt="" class="h-icon1">
+            </a>
+            <a href="login.html"><img src="img/login.svg" alt="" class="h-icon2"></a>
+            <a href="meus-pedidos.html"><img src="img/carrinho.svg" alt="" class="h-icon3"></a>
+        </div>
+
+        <div> <!--Navbar-->
+            <nav class="navbar"> 
+                <div class="menu-container">
+                    <img src="img/menu.svg" alt="menu" class="menu-icon">
+                    <div class="dropdown-menu">
+                        <a href="minha-conta.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">person</span>
+                            Minha Conta
+                        </a>
+                        <a href="meus-pedidos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">shopping_bag</span>
+                            Meus Pedidos
+                        </a>
+                        <a href="favoritos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">favorite</span>
+                            Favoritos
+                        </a>
+                        <a href="ajuda.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">help</span>
+                            Ajuda
+                        </a>
+                        <a href="suporte.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">support_agent</span>
+                            Suporte Técnico
+                        </a>
+                        <button class="dropdown-item theme-toggle-btn" id="themeToggle">
+                            <span class="material-symbols-outlined dropdown-icon">dark_mode</span>
+                            Modo Escuro
+                        </button>
+
+                    </div>
+                </div>
+                <a href="#todas-categorias" class="nav-links">Todas as categorias</a>
+                <a href="#mais-vendidos" class="nav-links">Mais vendidos</a>
+                <a href="#casa-inteligente" class="nav-links">Casa Inteligente</a>
+                <a href="#interfones" class="nav-links">Interfones</a>
+                <a href="#cameras" class="nav-links">Câmeras</a>
+                <p>|</p>
+                <a href="#kits" class="nav-links">Kits</a>
+                <a href="#instalacao" class="nav-link">Instalação</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="index.html" class="breadcrumb-link"><img src="img/sair.svg" alt="Voltar"></a>
+    </div>
+
+    <main class="support-container">
+        <div class="guide-hero">
+            <div class="guide-hero-icon">
+                <span class="material-symbols-outlined">videocam</span>
+            </div>
+            <h1>Guias para Câmeras</h1>
+            <p>Instalação, configuração e solução de problemas para suas câmeras de segurança</p>
+        </div>
+
+        <section class="guides-category">
+            <h2 class="section-title">Instalação Básica</h2>
+            
+            <div class="guide-card-detailed">
+                <span class="difficulty facil">Fácil - 15 min</span>
+                <h3>Instalação de Câmera IP Wi-Fi</h3>
+                <p>Aprenda a instalar e configurar uma câmera IP conectada via Wi-Fi.</p>
+                
+                <div class="tools-list">
+                    <h4>📋 O que você vai precisar:</h4>
+                    <ul>
+                        <li>Câmera IP Wi-Fi</li>
+                        <li>Smartphone com app Tecnocam</li>
+                        <li>Roteador Wi-Fi funcionando</li>
+                        <li>Senha do Wi-Fi</li>
+                        <li>Adaptador de energia</li>
+                    </ul>
+                </div>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Posicione a câmera:</strong> Escolha um local com boa visão e próximo do roteador</li>
+                    <li><strong>Conecte a energia:</strong> Use o adaptador fornecido para ligar a câmera</li>
+                    <li><strong>Baixe o app:</strong> Instale o aplicativo Tecnocam na sua loja de apps</li>
+                    <li><strong>Modo de configuração:</strong> A câmera deve piscar LED indicando modo de pareamento</li>
+                    <li><strong>Adicione dispositivo:</strong> No app, toque em "+" e siga as instruções</li>
+                    <li><strong>Conecte ao Wi-Fi:</strong> Selecione sua rede e digite a senha</li>
+                    <li><strong>Teste a conexão:</strong> Verifique se a imagem aparece no app</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed">
+                <span class="difficulty medio">Médio - 30 min</span>
+                <h3>Instalação de Câmera com Cabo Ethernet</h3>
+                <p>Configuração de câmeras que utilizam conexão cabeada para maior estabilidade.</p>
+                
+                <div class="tools-list">
+                    <h4>📋 O que você vai precisar:</h4>
+                    <ul>
+                        <li>Câmera com porta Ethernet</li>
+                        <li>Cabo Ethernet (CAT5e ou superior)</li>
+                        <li>Roteador com portas LAN disponíveis</li>
+                        <li>Smartphone com app Tecnocam</li>
+                    </ul>
+                </div>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Conecte o cabo Ethernet:</strong> Ligue a câmera diretamente ao roteador</li>
+                    <li><strong>Alimentação elétrica:</strong> Conecte o adaptador de energia da câmera</li>
+                    <li><strong>Verifique os LEDs:</strong> A câmera deve mostrar LED de rede e energia</li>
+                    <li><strong>Configure no app:</strong> Abra o app e adicione a câmera automaticamente</li>
+                    <li><strong>Ajuste a posição:</strong> Posicione a câmera para a área desejada</li>
+                    <li><strong>Teste a imagem:</strong> Verifique a qualidade e ângulo de visão</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="guides-category">
+            <h2 class="section-title">Solução de Problemas</h2>
+            
+            <div class="guide-card-detailed">
+                <span class="difficulty facil">Fácil - 10 min</span>
+                <h3>Câmera Não Conecta ao Wi-Fi</h3>
+                <p>Soluções para quando a câmera não consegue se conectar à rede wireless.</p>
+                
+                <h4>🔧 Solução Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Verifique a rede Wi-Fi:</strong> Teste com outro dispositivo se a rede está funcionando</li>
+                    <li><strong>Confira a senha:</strong> Digite a senha novamente, atento a maiúsculas</li>
+                    <li><strong>Distância do roteador:</strong> Aproxime a câmera do roteador temporariamente</li>
+                    <li><strong>Reinicie a câmera:</strong> Desligue e ligue a câmera após 30 segundos</li>
+                    <li><strong>Reinicie o roteador:</strong> Desligue o roteador por 1 minuto e ligue novamente</li>
+                    <li><strong>Repita a configuração:</strong> Tente conectar a câmera novamente</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed">
+                <span class="difficulty medio">Médio - 20 min</span>
+                <h3>Imagem da Câmera com Baixa Qualidade</h3>
+                <p>Como melhorar a qualidade de imagem quando está pixelada ou escura.</p>
+                
+                <h4>🔧 Solução Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Limpe a lente:</strong> Use um pano macio para limpar suavemente</li>
+                    <li><strong>Verifique a iluminação:</strong> Evite luz direta no lens e claridade excessiva</li>
+                    <li><strong>Ajuste a resolução:</strong> No app, vá em configurações e aumente a resolução</li>
+                    <li><strong>Teste a conexão:</strong> Verifique a velocidade da internet com speed test</li>
+                    <li><strong>Posicionamento:</strong> Ajuste o ângulo para evitar reflexos</li>
+                    <li><strong>Configurações noturnas:</strong> Ajuste o IR para ambientes escuros</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="guides-category">
+            <h2 class="section-title">Configurações Avançadas</h2>
+            
+            <div class="guide-card-detailed">
+                <span class="difficulty medio">Médio - 25 min</span>
+                <h3>Configuração de Detecção de Movimento</h3>
+                <p>Aprenda a configurar alertas inteligentes por detecção de movimento.</p>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Acesse as configurações:</strong> No app, toque na câmera e depois em "Configurações"</li>
+                    <li><strong>Detecção de movimento:</strong> Entre no menu "Detecção Inteligente"</li>
+                    <li><strong>Ative a detecção:</strong> Habilite a opção de detecção de movimento</li>
+                    <li><strong>Defina a área:</strong> Selecione as áreas da imagem para monitorar</li>
+                    <li><strong>Ajuste a sensibilidade:</strong> Configure o nível de sensibilidade (recomendado: médio)</li>
+                    <li><strong>Configure notificações:</strong> Ative alertas push no seu smartphone</li>
+                    <li><strong>Teste o sistema:</strong> Passe na área monitorada para verificar os alertas</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="support-contact">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <span class="material-symbols-outlined">support_agent</span>
+                </div>
+                <div class="contact-info">
+                    <h3>Precisa de mais ajuda?</h3>
+                    <p>Nossa equipe técnica está disponível para assistência personalizada</p>
+                    <div class="contact-buttons">
+                        <button class="btn-primary" onclick="window.open('https://api.whatsapp.com/send?phone=554188046891&text=Preciso de ajuda com câmeras', '_blank')">
+                            WhatsApp Técnico
+                        </button>
+                        <button class="btn-secondary" onclick="window.location.href='suporte.html'">
+                            Voltar ao Suporte
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"> <!--Footer-->
+    <div class="footer-container">
+        <!-- Redes Sociais no topo -->
+        <div class="footer-social">
+            <h3 class="social-title">Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" id="facebook">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tecnocam2025" class="social-icon1" target="_blank" id="instagram">
+                    <img src="img/ins.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" class="social-icon1" target="_blank" id="youtube">
+                    <img src="img/you.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/feed" class="social-icon" target="_blank" id="linkedin">
+                    <img src="img/link.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal do Footer -->
+        <div class="footer-content">
+            <!-- Coluna Institucional -->
+            <div class="footer-column">
+                <h3 class="footer-title">Institucional</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Sobre a Tecnocam</a></li>
+                    <li><a href="#" class="footer-link">Responsabilidade Social</a></li>
+                    <li><a href="#" class="footer-link">Meio Ambiente</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Políticas -->
+            <div class="footer-column">
+                <h3 class="footer-title">Políticas</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link">Políticas de Entrega</a></li>
+                    <li><a href="#" class="footer-link">Política de Troca e Devolução</a></li>
+                    <li><a href="#" class="footer-link">Política de Pagamento</a></li>
+                    <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Regulamentos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Atendimento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Fale Conosco</a></li>
+                    <li class="footer-contact">(55) 3281-9730 | tecnocam@</li>
+                    <li class="footer-contact">Seg/Sex - 8h00 às 17h30</li>
+                </ul>
+            </div>
+
+            <!-- Coluna Pagamento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"><img src="img/visa.png" alt=""></div>
+                    <div class="payment-icon mastercard"><img src="img/master.png" alt=""></div>
+                    <div class="payment-icon elo"><img src="img/elo.png" alt=""></div>
+                    <div class="payment-icon pix"><img src="img/pix.png" alt=""></div>
+                    <div class="payment-icon boleto"><img src="img/boleto.png" alt=""></div>
+                    <div class="payment-icon nubank"><img src="img/nua.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=554188046891&text=Quero%20fazer%20um%20agendamento%20hoje!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+            <img src="img/whatssapp.svg" alt="btn whatssapp"><span class="tooltip-text">Agende seu horário</span>
+        </a>
+    </div>
+</body>
+</html>

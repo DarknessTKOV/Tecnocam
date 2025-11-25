@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta - Tecnocam</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="minhac.css">
+    <link rel="stylesheet" href="produtos.css">
+    <script src="./main.js" defer></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="tecnocam">
+            <img src="img/logo.png" alt="" class="logo">
+            <h1>Tecnocam</h1>
+            <div class="search">
+                <label for="searchInput">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <a href="suporte.html" rel="noopener noreferrer"><img src="img/suport.svg" alt="" class="h-icon1"></a>
+            <a href="login.html"><img src="img/login.svg" alt="" class="h-icon2"></a>
+            <a href="meus-pedidos.html"><img src="img/carrinho.svg" alt="" class="h-icon3"></a>
+        </div>
+        </div>
+
+        <div> <!--Navbar-->
+            <nav class="navbar"> 
+                <div class="menu-container">
+                    <img src="img/menu.svg" alt="menu" class="menu-icon">
+                    <div class="dropdown-menu">
+                        <a href="minha-conta.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">person</span>
+                            Minha Conta
+                        </a>
+                        <a href="meus-pedidos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">shopping_bag</span>
+                            Meus Pedidos
+                        </a>
+                        <a href="favoritos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">favorite</span>
+                            Favoritos
+                        </a>
+                        <a href="ajuda.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">help</span>
+                            Ajuda
+                        </a>
+                        <a href="suporte.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">support_agent</span>
+                            Suporte Técnico
+                        </a>
+                        <button class="dropdown-item theme-toggle-btn" id="themeToggle">
+                            <span class="material-symbols-outlined dropdown-icon">dark_mode</span>
+                            Modo Escuro
+                        </button>
+
+                    </div>
+                </div>
+                <a href="#todas-categorias" class="nav-links">Todas as categorias</a>
+                <a href="#mais-vendidos" class="nav-links">Mais vendidos</a>
+                <a href="#casa-inteligente" class="nav-links">Casa Inteligente</a>
+                <a href="#interfones" class="nav-links">Interfones</a>
+                <a href="#cameras" class="nav-links">Câmeras</a>
+                <p>|</p>
+                <a href="#kits" class="nav-links">Kits</a>
+                <a href="#instalacao" class="nav-link">Instalação</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="back-button-container">
+        <a href="index.html" class="back-button">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+            Voltar
+        </a>
+    </div>
+
+    <main class="account-container">
+        <div class="account-header">
+            <h1>Minha Conta</h1>
+            <p>Gerencie suas informações pessoais e preferências</p>
+        </div>
+
+        <div class="account-grid">
+            <aside class="account-sidebar">
+                <div class="user-info">
+                    <div class="user-avatar">U</div>
+                    <div class="user-name">Usuário Tecnocam</div>
+                    <div class="user-email">usuario@email.com</div>
+                </div>
+                
+                <ul class="sidebar-menu">
+                    <li><a href="minha-conta.html" class="active">
+                        <span class="material-symbols-outlined">person</span>
+                        Dados Pessoais
+                    </a></li>
+                    <li><a href="meus-pedidos.html">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        Meus Pedidos
+                    </a></li>
+                    <li><a href="favoritos.html">
+                        <span class="material-symbols-outlined">favorite</span>
+                        Favoritos
+                    </a></li>
+                    <li><a href="ajuda.html">
+                        <span class="material-symbols-outlined">help</span>
+                        Ajuda
+                    </a></li>
+                    <li><a href="suporte.html">
+                        <span class="material-symbols-outlined">support_agent</span>
+                        Suporte Técnico
+                    </a></li>
+                </ul>
+            </aside>
+
+            <div class="account-content">
+                <h2 class="section-title">Dados Pessoais</h2>
+                
+                <form>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" value="Usuário Tecnocam">
+                        </div>
+                        
+                        <div class="info-item">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" value="usuario@email.com">
+                        </div>
+                        
+                        <div class="info-item">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" value="(11) 99999-9999">
+                        </div>
+                        
+                        <div class="info-item">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" value="123.456.789-00">
+                        </div>
+                        
+                        <div class="info-item">
+                            <label for="nascimento">Data de Nascimento</label>
+                            <input type="date" id="nascimento" value="1990-01-01">
+                        </div>
+                        
+                        <div class="info-item">
+                            <label for="genero">Gênero</label>
+                            <select id="genero">
+                                <option value="">Selecione</option>
+                                <option value="masculino" selected>Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                                <option value="prefiro-nao-informar">Prefiro não informar</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Salvar Alterações</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"> <!--Footer-->
+    <div class="footer-container">
+        <!-- Redes Sociais no topo -->
+        <div class="footer-social">
+            <h3 class="social-title">Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" id="facebook">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tecnocam2025" class="social-icon1" target="_blank" id="instagram">
+                    <img src="img/ins.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" class="social-icon1" target="_blank" id="youtube">
+                    <img src="img/you.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/feed" class="social-icon" target="_blank" id="linkedin">
+                    <img src="img/link.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal do Footer -->
+        <div class="footer-content">
+            <!-- Coluna Institucional -->
+            <div class="footer-column">
+                <h3 class="footer-title">Institucional</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Sobre a Tecnocam</a></li>
+                    <li><a href="#" class="footer-link">Responsabilidade Social</a></li>
+                    <li><a href="#" class="footer-link">Meio Ambiente</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Políticas -->
+            <div class="footer-column">
+                <h3 class="footer-title">Políticas</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link">Políticas de Entrega</a></li>
+                    <li><a href="#" class="footer-link">Política de Troca e Devolução</a></li>
+                    <li><a href="#" class="footer-link">Política de Pagamento</a></li>
+                    <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Regulamentos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Atendimento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Fale Conosco</a></li>
+                    <li class="footer-contact">(55) 3281-9730 | tecnocam@</li>
+                    <li class="footer-contact">Seg/Sex - 8h00 às 17h30</li>
+                </ul>
+            </div>
+
+            <!-- Coluna Pagamento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"><img src="img/visa.png" alt=""></div>
+                    <div class="payment-icon mastercard"><img src="img/master.png" alt=""></div>
+                    <div class="payment-icon elo"><img src="img/elo.png" alt=""></div>
+                    <div class="payment-icon pix"><img src="img/pix.png" alt=""></div>
+                    <div class="payment-icon boleto"><img src="img/boleto.png" alt=""></div>
+                    <div class="payment-icon nubank"><img src="img/nua.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=554188046891&text=Quero%20fazer%20um%20agendamento%20hoje!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="img/whatssapp.svg" alt="btn whatssapp"><span class="tooltip-text">Agende seu horário</span></a>
+    </div>
+</body>
+</html>

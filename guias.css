@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--bege-claro) !important;
+    color: var(--preto-carvao);
+}
+
+body.dark-mode .back-button{
+    background-color: var(--background);
+    transition: all 0.3s ease;
+}
+body.dark-mode .back-button:hover{
+    background-color: var(--background);
+    color: var(--dourado);
+    box-shadow: var(--dourado) 0px 0px 15px;
+}
+body.dark-mode .guide-hero{
+    background: linear-gradient(135deg, var(--bege-claro) 0%, var(--background) 100%);
+}
+body.dark-mode .guide-card-detailed{
+    background: var(--background);
+    transition: all 0.3s ease;
+}
+body.dark-mode .guide-card-detailed:hover{
+    background: var(--background);
+    box-shadow: var(--dourado) 0px 0px 20px;
+}
+body.dark-mode .contact-card{
+    background: linear-gradient(135deg, var(--bege-claro) 0%, var(--background) 100%);
+}
+body.dark-mode .btn-primary{
+    background-color: var(--background);
+    transition: all 0.3s ease;
+}
+body.dark-mode .btn-primary:hover{
+    background-color: var(--background);
+    border: 1px solid var(--verde-valor);
+    box-shadow: var(--verde-valor) 0px 0px 20px;
+}
+body.dark-mode .btn-secondary{
+    background-color: var(--background);
+    transition: all 0.3s ease;
+}
+body.dark-mode .btn-secondary:hover{
+    background-color: var(--background);
+    box-shadow: var(--dourado) 0px 0px 10px;
+    transform: scale(1.03);
+}
+body.dark-mode .quick-fix-card{
+    background-color: var(--background);
+    transition: all 0.3s ease;
+    border: 1px ;
+}
+body.dark-mode .quick-fix-card:hover{
+    background-color: var(--background);
+    border: 1px solid var(--kosmo-blue);
+    box-shadow: var(--kosmo-blue) 0px 0px 10px;
+}
+body.dark-mode .tip-card{
+    background-color: var(--background);
+    transition: all 0.3s ease;
+}
+body.dark-mode .tip-card:hover{
+    background-color: var(--background);
+    border: 1px solid var(--kosmo-blue);
+    box-shadow: var(--kosmo-blue) 0px 0px 10px;
+}
+body.dark-mode .spec-card{
+    background-color: var(--background);
+    transition: all 0.3s ease;
+    border: 1px;
+}
+body.dark-mode .spec-card:hover{
+    background-color: var(--background);
+    border: 1px solid var(--kosmo-blue);
+    box-shadow: var(--kosmo-blue) 0px 0px 10px;
+}
+
+
+/* Estilos para páginas de guias */
+.guide-hero {
+    background: linear-gradient(135deg, var(--bege-claro) 0%, #f0ede8 100%);
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    border: 2px solid var(--dourado);
+}
+
+.guide-hero-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--dourado);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+}
+
+.guide-hero-icon .material-symbols-outlined {
+    font-size: 40px;
+}
+
+.guides-category {
+    margin-bottom: 60px;
+}
+
+.guide-card-detailed {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--dourado);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guide-card-detailed:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.guide-card-detailed h3 {
+    color: var(--azul-titulo);
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+.difficulty {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.difficulty.facil {
+    background: #e8f5e8;
+    color: #2e7d32;
+    border: 1px solid #2e7d32;
+}
+
+.difficulty.medio {
+    background: #fff3e0;
+    color: #ef6c00;
+    border: 1px solid #ef6c00;
+}
+
+.difficulty.dificil {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #c62828;
+}
+
+.steps-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.steps-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: var(--preto-carvao);
+}
+
+.steps-list strong {
+    color: var(--azul-titulo);
+}
+
+.tools-list {
+    background: var(--bege-claro);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 4px solid var(--dourado);
+}
+
+.tools-list h4 {
+    margin-bottom: 10px;
+    color: var(--preto-carvao);
+    font-size: 16px;
+}
+
+.tools-list ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.tools-list li {
+    margin-bottom: 8px;
+    color: var(--preto-carvao);
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--dourado);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border: 1px solid var(--dourado);
+    border-radius: 8px;
+    background: white;
+}
+
+.back-button:hover {
+    color: white;
+    background: var(--dourado);
+}
+
+.support-contact {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid var(--cinza-areia);
+}
+
+.contact-card {
+    background: linear-gradient(135deg, var(--bege-claro) 0%, #f0ede8 100%);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 2px solid var(--dourado);
+}
+
+.contact-card .contact-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--dourado);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.contact-card .contact-icon .material-symbols-outlined {
+    font-size: 40px;
+}
+
+.contact-info h3 {
+    color: var(--azul-titulo);
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.contact-info p {
+    color: var(--muted);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Estilos adicionais para página Wi-Fi */
+.troubleshooting-quick {
+    margin: 50px 0;
+}
+
+.quick-fixes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.quick-fix-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid var(--cinza-areia);
+    transition: transform 0.3s ease;
+}
+
+.quick-fix-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--dourado);
+}
+
+.quick-fix-card .material-symbols-outlined {
+    font-size: 40px;
+    color: var(--dourado);
+    margin-bottom: 15px;
+}
+
+.quick-fix-card h4 {
+    color: var(--azul-titulo);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.quick-fix-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Estilos adicionais para página Casa Inteligente */
+.automation-tips {
+    margin: 50px 0;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tip-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--dourado);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.tip-card .material-symbols-outlined {
+    font-size: 48px;
+    color: var(--dourado);
+    margin-bottom: 20px;
+}
+
+.tip-card h4 {
+    color: var(--azul-titulo);
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+.tip-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+/* Estilos adicionais para página DVR/NVR */
+.dvr-specs {
+    margin: 50px 0;
+}
+
+.specs-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.spec-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 2px solid var(--cinza-areia);
+    transition: all 0.3s ease;
+}
+
+.spec-card:hover {
+    border-color: var(--dourado);
+    transform: translateY(-5px);
+}
+
+.spec-card h4 {
+    color: var(--azul-titulo);
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+.spec-card ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.spec-card li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    color: var(--preto-carvao);
+    line-height: 1.5;
+}
+
+.spec-card li:before {
+    content: "•";
+    color: var(--dourado);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.spec-card strong {
+    color: var(--azul-titulo);
+}
+
+/* Responsivo para specs comparison */
+@media (max-width: 768px) {
+    .specs-comparison {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .spec-card {
+        padding: 25px 20px;
+    }
+}
+/* Responsivo para tips grid */
+@media (max-width: 768px) {
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .tip-card {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Responsivo para quick fixes */
+@media (max-width: 768px) {
+    .quick-fixes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .quick-fix-card {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .quick-fixes {
+        grid-template-columns: 1fr;
+    }
+}
+/* Responsivo */
+@media (max-width: 768px) {
+    .guide-hero {
+        padding: 40px 20px;
+        margin-bottom: 30px;
+    }
+    
+    .guide-card-detailed {
+        padding: 20px;
+    }
+    
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .contact-buttons {
+        justify-content: center;
+    }
+    
+    .steps-list {
+        padding-left: 15px;
+    }
+}

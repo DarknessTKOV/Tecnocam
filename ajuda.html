@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda - Tecnocam</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ajuda.css">
+    <script src="./main.js" defer></script>
+    <script src="./ajuda.js" defer></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="tecnocam">
+            <img src="img/logo.png" alt="" class="logo">
+            <h1>Tecnocam</h1>
+            <div class="search">
+                <label for="searchInput">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <a href="suporte.html" rel="noopener noreferrer"><img src="img/suport.svg" alt="" class="h-icon1"></a>
+            <a href="login.html"><img src="img/login.svg" alt="" class="h-icon2"></a>
+            <a href="meus-pedidos.html"><img src="img/carrinho.svg" alt="" class="h-icon3"></a>
+        </div>
+
+        <div>
+            <nav class="navbar"> 
+                <div class="menu-container">
+                    <img src="img/menu.svg" alt="menu" class="menu-icon">
+                    <div class="dropdown-menu">
+                        <a href="minha-conta.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">person</span>
+                            Minha Conta
+                        </a>
+                        <a href="meus-pedidos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">shopping_bag</span>
+                            Meus Pedidos
+                        </a>
+                        <a href="favoritos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">favorite</span>
+                            Favoritos
+                        </a>
+                        <a href="ajuda.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">help</span>
+                            Ajuda
+                        </a>
+                        <a href="suporte.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">support_agent</span>
+                            Suporte Técnico
+                        </a>
+                        <button class="dropdown-item theme-toggle-btn" id="themeToggle">
+                            <span class="material-symbols-outlined dropdown-icon">dark_mode</span>
+                            Modo Escuro
+                        </button>
+                    </div>
+                </div>
+                <a href="#todas-categorias" class="nav-links">Todas as categorias</a>
+                <a href="#mais-vendidos" class="nav-links">Mais vendidos</a>
+                <a href="#casa-inteligente" class="nav-links">Casa Inteligente</a>
+                <a href="#interfones" class="nav-links">Interfones</a>
+                <a href="#cameras" class="nav-links">Câmeras</a>
+                <p>|</p>
+                <a href="#kits" class="nav-links">Kits</a>
+                <a href="#instalacao" class="nav-link">Instalação</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="back-button-container">
+        <a href="index.html" class="back-button">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+            Voltar
+        </a>
+    </div>
+
+    <main class="help-container"> 
+        <div class="help-header">
+            <h1>Central de Ajuda</h1>
+            <p>Encontre respostas para suas dúvidas e suporte técnico</p>
+        </div>
+
+        <div class="help-grid"> 
+            <aside class="help-sidebar">
+                <div class="user-info"> <!--user-->
+                    <div class="user-avatar">U</div>
+                    <div class="user-name">Usuário Tecnocam</div>
+                    <div class="user-email">usuario@email.com</div>
+                </div>
+                
+                <ul class="sidebar-menu"> <!--sidebar menu-->
+                    <li><a href="minha-conta.html">
+                        <span class="material-symbols-outlined">person</span>
+                        Dados Pessoais
+                    </a></li>
+                    <li><a href="meus-pedidos.html">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        Meus Pedidos
+                    </a></li>
+                    <li><a href="favoritos.html">
+                        <span class="material-symbols-outlined">favorite</span>
+                        Favoritos
+                    </a></li>
+                    <li><a href="ajuda.html" class="active">
+                        <span class="material-symbols-outlined">help</span>
+                        Ajuda
+                    </a></li>
+                    <li><a href="suporte.html">
+                        <span class="material-symbols-outlined">support_agent</span>
+                        Suporte Técnico
+                    </a></li>
+                </ul>
+            </aside>
+
+            <div class="help-content"> <!--pesquisa ajuda-->
+                <div class="help-search">
+                    <div class="search-box">
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="text" id="helpSearch" placeholder="Pesquisar na ajuda...">
+                    </div>
+                </div>
+
+                <div class="help-categories"> <!--ajuda-->
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <span class="material-symbols-outlined">shopping_bag</span>
+                        </div>
+                        <h3>Pedidos e Entregas</h3>
+                        <p>Acompanhamento, prazos e status de entrega</p>
+                        <a href="#pedidos" class="category-link">Ver tópicos</a>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <span class="material-symbols-outlined">payments</span>
+                        </div>
+                        <h3>Pagamentos</h3>
+                        <p>Formas de pagamento e problemas com transações</p>
+                        <a href="#pagamentos" class="category-link">Ver tópicos</a>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <span class="material-symbols-outlined">swap_horiz</span>
+                        </div>
+                        <h3>Trocas e Devoluções</h3>
+                        <p>Política de troca, devolução e garantia</p>
+                        <a href="#trocas" class="category-link">Ver tópicos</a>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <span class="material-symbols-outlined">devices</span>
+                        </div>
+                        <h3>Suporte Técnico</h3>
+                        <p>Instalação, configuração e problemas técnicos</p>
+                        <a href="#suporte" class="category-link">Ver tópicos</a>
+                    </div>
+                </div>
+
+                <div class="faq-section"> <!--FAQ-->
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Como rastrear meu pedido?</span>
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Para rastrear seu pedido, acesse "Meus Pedidos" em sua conta e clique no pedido desejado. Lá você encontrará o código de rastreamento e o link para acompanhar a entrega.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Qual o prazo de entrega?</span>
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>O prazo de entrega varia de 3 a 10 dias úteis, dependendo da sua localização. Pedidos feitos com KosmoFull têm entrega mais rápida, geralmente em 2-5 dias úteis.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Como faço para trocar um produto?</span>
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Você tem 30 dias para solicitar a troca. Acesse "Meus Pedidos", selecione o produto e clique em "Solicitar Troca". Nossa equipe entrará em contato em até 48h.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Quais formas de pagamento são aceitas?</span>
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Aceitamos cartão de crédito (até 12x), débito, PIX (com 10% de desconto), boleto bancário e transferência. Todas as transações são 100% seguras.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Como instalar minha câmera?</span>
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Oferecemos serviço de instalação profissional. Você pode contratar durante a compra ou posteriormente. Também disponibilizamos manuais e tutoriais em vídeo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section"> <!--fale conosco-->
+                    <h2 class="section-title">Fale Conosco</h2>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <span class="material-symbols-outlined">chat</span>
+                            </div>
+                            <h3>Chat Online</h3>
+                            <p>Atendimento rápido pelo chat</p>
+                            <button class="btn-primary">Iniciar Chat</button>
+                        </div>
+
+                        <div class="contact-card"> <!--ligar-->
+                            <div class="contact-icon">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <h3>Telefone</h3>
+                            <p>(55) 3281-9730</p>
+                            <p>Segunda a Sexta, 8h às 17h30</p>
+                        </div>
+
+                        <div class="contact-card"> <!--email-->
+                            <div class="contact-icon">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <h3>E-mail</h3>
+                            <p>tecnocam@suporte.com</p>
+                            <p>Respondemos em até 24h</p>
+                        </div>
+
+                        <div class="contact-card"> <!--zap-->
+                            <div class="contact-icon">
+                            <img src="img/whatssapp.svg" alt="" class="zap" style="width: 60px;">
+                            </div>
+                            <h3>WhatsApp</h3>
+                            <p>(41) 8804-6891</p>
+                            <button class="btn-primary">Enviar Mensagem</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"> <!--footer-->
+    <div class="footer-container">
+        <div class="footer-social"> <!--redes sociais-->
+            <h3 class="social-title">Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" id="facebook">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tecnocam2025" class="social-icon1" target="_blank" id="instagram">
+                    <img src="img/ins.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" class="social-icon1" target="_blank" id="youtube">
+                    <img src="img/you.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/feed" class="social-icon" target="_blank" id="linkedin">
+                    <img src="img/link.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-content"> <!--conteúdo do footer-->
+            <div class="footer-column"> <!--institucional-->
+                <h3 class="footer-title">Institucional</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Sobre a Tecnocam</a></li>
+                    <li><a href="#" class="footer-link">Responsabilidade Social</a></li>
+                    <li><a href="#" class="footer-link">Meio Ambiente</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column"> <!--politicas-->
+                <h3 class="footer-title">Políticas</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link">Políticas de Entrega</a></li>
+                    <li><a href="#" class="footer-link">Política de Troca e Devolução</a></li>
+                    <li><a href="#" class="footer-link">Política de Pagamento</a></li>
+                    <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Regulamentos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column"> <!--atendimento-->
+                <h3 class="footer-title">Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Fale Conosco</a></li>
+                    <li class="footer-contact">(55) 3281-9730 | tecnocam@</li>
+                    <li class="footer-contact">Seg/Sex - 8h00 às 17h30</li>
+                </ul>
+            </div>
+
+            <div class="footer-column"> <!--pagamento-->
+                <h3 class="footer-title">Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"><img src="img/visa.png" alt=""></div>
+                    <div class="payment-icon mastercard"><img src="img/master.png" alt=""></div>
+                    <div class="payment-icon elo"><img src="img/elo.png" alt=""></div>
+                    <div class="payment-icon pix"><img src="img/pix.png" alt=""></div>
+                    <div class="payment-icon boleto"><img src="img/boleto.png" alt=""></div>
+                    <div class="payment-icon nubank"><img src="img/nua.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=554188046891&text=Quero%20fazer%20um%20agendamento%20hoje!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="img/whatssapp.svg" alt="btn whatssapp"><span class="tooltip-text">Agende seu horário</span></a>
+    </div>
+</body>
+</html>

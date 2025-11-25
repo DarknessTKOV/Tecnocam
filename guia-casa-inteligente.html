@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guias para Casa Inteligente - Tecnocam</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="suporte.css">
+    <link rel="stylesheet" href="guias.css">
+    <script src="./main.js" defer></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="tecnocam"> <!-- topo header -->
+        <img src="img/logo.png" alt="" class="logo">
+            <h1>Tecnocam</h1>
+        <div class="search"> <!-- busca -->
+                <label for="searchInput">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <a href="suporte.html" rel="noopener noreferrer">
+                <img src="img/suport.svg" alt="" class="h-icon1">
+            </a>
+            <a href="login.html"><img src="img/login.svg" alt="" class="h-icon2"></a>
+            <a href="meus-pedidos.html"><img src="img/carrinho.svg" alt="" class="h-icon3"></a>
+        </div>
+
+        <div> 
+            <nav class="navbar"> <!-- navbar -->
+                <div class="menu-container"> <!-- menu dropdown -->
+                    <img src="img/menu.svg" alt="menu" class="menu-icon">
+                    <div class="dropdown-menu">
+                        <a href="minha-conta.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">person</span>
+                            Minha Conta
+                        </a>
+                        <a href="meus-pedidos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">shopping_bag</span>
+                            Meus Pedidos
+                        </a>
+                        <a href="favoritos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">favorite</span>
+                            Favoritos
+                        </a>
+                        <a href="ajuda.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">help</span>
+                            Ajuda
+                        </a>
+                        <a href="suporte.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">support_agent</span>
+                            Suporte Técnico
+                        </a>
+                        <button class="dropdown-item theme-toggle-btn" id="themeToggle">
+                            <span class="material-symbols-outlined dropdown-icon">dark_mode</span>
+                            Modo Escuro
+                        </button>
+                    </div>
+                </div>
+                <a href="#todas-categorias" class="nav-links">Todas as categorias</a>
+                <a href="#mais-vendidos" class="nav-links">Mais vendidos</a>
+                <a href="#casa-inteligente" class="nav-links">Casa Inteligente</a>
+                <a href="#interfones" class="nav-links">Interfones</a>
+                <a href="#cameras" class="nav-links">Câmeras</a>
+                <p>|</p>
+                <a href="#kits" class="nav-links">Kits</a>
+                <a href="#instalacao" class="nav-link">Instalação</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumb"> <!-- breadcrumb -->
+        <a href="index.html" class="breadcrumb-link"><img src="img/sair.svg" alt="Voltar"></a>
+    </div>
+
+    <main class="support-container"> <!-- container suporte -->
+        <div class="guide-hero"> <!-- hero guias -->
+            <div class="guide-hero-icon">
+                <span class="material-symbols-outlined">home</span>
+            </div>
+            <h1>Guias para Casa Inteligente</h1>
+            <p>Automação residencial, integração de dispositivos IoT e controle inteligente</p>
+        </div>
+
+        <section class="guides-category"> <!-- categoria configuração -->
+            <h2 class="section-title">Configuração Básica</h2>
+            
+            <div class="guide-card-detailed"> <!-- guia hub central -->
+                <span class="difficulty facil">Fácil - 20 min</span>
+                <h3>Configuração do Hub Central</h3>
+                <p>Como configurar o centro de controle para seus dispositivos smart.</p>
+                
+                <div class="tools-list"> <!-- lista ferramentas -->
+                    <h4>📋 O que você vai precisar:</h4>
+                    <ul>
+                        <li>Hub central Tecnocam</li>
+                        <li>Cabo Ethernet</li>
+                        <li>Adaptador de energia</li>
+                        <li>Smartphone com app Tecnocam</li>
+                        <li>Roteador Wi-Fi</li>
+                    </ul>
+                </div>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list"> <!-- passos -->
+                    <li><strong>Conecte o hub:</strong> Ligue na tomada e conecte ao roteador via Ethernet</li>
+                    <li><strong>Aguarde inicialização:</strong> LEDs devem ficar estáveis (2-3 minutos)</li>
+                    <li><strong>Baixe o app:</strong> Instale "Tecnocam Smart" na loja de aplicativos</li>
+                    <li><strong>Crie conta:</strong> Registre-se ou faça login no aplicativo</li>
+                    <li><strong>Adicione o hub:</strong> Toque em "+" e selecione "Adicionar Hub"</li>
+                    <li><strong>Siga o assistente:</strong> O app irá guiar pelo processo de pareamento</li>
+                    <li><strong>Teste conexão:</strong> Verifique se o hub aparece como online</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed"> <!-- guia lâmpadas -->
+                <span class="difficulty medio">Médio - 30 min</span>
+                <h3>Integração de Lâmpadas Inteligentes</h3>
+                <p>Como conectar e configurar lâmpadas smart com o sistema.</p>
+                
+                <div class="tools-list"> <!-- lista ferramentas -->
+                    <h4>📋 O que você vai precisar:</h4>
+                    <ul>
+                        <li>Lâmpadas inteligentes compatíveis</li>
+                        <li>Hub central configurado</li>
+                        <li>Smartphone com app</li>
+                        <li>Tomadas funcionais</li>
+                    </ul>
+                </div>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list"> <!-- passos -->
+                    <li><strong>Instale as lâmpadas:</strong> Rosqueie nas luminárias desejadas</li>
+                    <li><strong>Ligue a energia:</strong> Acenda as luzes manualmente primeiro</li>
+                    <li><strong>Modo de pareamento:</strong> Liga/desliga 3x rápido para entrar em modo configuração</li>
+                    <li><strong>Adicione no app:</strong> Vá em "Dispositivos" → "+" → "Lâmpada"</li>
+                    <li><strong>Siga as instruções:</strong> O app detectará automaticamente</li>
+                    <li><strong>Organize por cômodos:</strong> Dê nomes como "Sala", "Quarto", etc.</li>
+                    <li><strong>Teste o controle:</strong> Use o app para ligar/desligar e ajustar cores</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="guides-category"> <!-- categoria dispositivos -->
+            <h2 class="section-title">Dispositivos Inteligentes</h2>
+            
+            <div class="guide-card-detailed"> <!-- guia tomadas -->
+                <span class="difficulty medio">Médio - 25 min</span>
+                <h3>Configuração de Tomadas Inteligentes</h3>
+                <p>Controle eletrodomésticos remotamente com tomadas smart.</p>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list"> <!-- passos -->
+                    <li><strong>Conecte na tomada:</strong> Insira a tomada inteligente na parede</li>
+                    <li><strong>LED de status:</strong> Deve piscar indicando modo de configuração</li>
+                    <li><strong>Abra o app:</strong> Vá em "Dispositivos" → "Adicionar Tomada"</li>
+                    <li><strong>Selecione tipo:</strong> Escolha o modelo específico</li>
+                    <li><strong>Conecte ao Wi-Fi:</strong> Siga as instruções de conexão</li>
+                    <li><strong>Nomeie o dispositivo:</strong> Ex: "Tomada TV", "Tomada Cafeteira"</li>
+                    <li><strong>Teste o controle:</strong> Ligue/desligue remotamente pelo app</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed"> <!-- guia sensores -->
+                <span class="difficulty medio">Médio - 35 min</span>
+                <h3>Instalação de Sensores de Movimento</h3>
+                <p>Como instalar e configurar sensores para automação e segurança.</p>
+                
+                <div class="tools-list"> <!-- locais recomendados -->
+                    <h4>📍 Locais recomendados:</h4>
+                    <ul>
+                        <li>Entradas e corredores</li>
+                        <li>Área externa (modelos à prova d'água)</li>
+                        <li>Salas pouco utilizadas</li>
+                        <li>Garagem e área de serviço</li>
+                    </ul>
+                </div>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list"> <!-- passos -->
+                    <li><strong>Escolha o local:</strong> Altura de 1,5m a 2m do chão</li>
+                    <li><strong>Instalação:</strong> Use fita dupla face ou parafusos</li>
+                    <li><strong>Alimentação:</strong> Conecte baterias ou energia</li>
+                    <li><strong>Modo pareamento:</strong> Pressione botão por 5 segundos</li>
+                    <li><strong>Adicione no app:</strong> "Dispositivos" → "Sensor de Movimento"</li>
+                    <li><strong>Ajuste sensibilidade:</strong> Configure alcance e tempo de resposta</li>
+                    <li><strong>Crie automações:</strong> Ex: "Se movimento → Acender luzes"</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="guides-category"> <!-- categoria automações -->
+            <h2 class="section-title">Automações e Cenários</h2>
+            
+            <div class="guide-card-detailed"> <!-- guia rotinas -->
+                <span class="difficulty medio">Médio - 40 min</span>
+                <h3>Criação de Rotinas Automatizadas</h3>
+                <p>Aprenda a criar cenários inteligentes para sua casa.</p>
+                
+                <h4>🎯 Exemplos Práticos:</h4>
+                <div class="tools-list"> <!-- exemplos -->
+                    <ul>
+                        <li><strong>"Boa Noite":</strong> Desliga todas as luzes, fecha cortinas, ativa alarme</li>
+                        <li><strong>"Acordar":</strong> Luzes gradualmente, cafeteira liga, notícias</li>
+                        <li><strong>"Chegar em Casa":</strong> Luzes acessas, temperatura ajustada, música</li>
+                    </ul>
+                </div>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list"> <!-- passos -->
+                    <li><strong>Acesse automações:</strong> No app, vá em "Cenários" ou "Rotinas"</li>
+                    <li><strong>Crie nova rotina:</strong> Toque em "+ Nova Rotina"</li>
+                    <li><strong>Defina gatilho:</strong> Ex: Horário, localização, comando de voz</li>
+                    <li><strong>Adicione ações:</strong> Selecione dispositivos e ações desejadas</li>
+                    <li><strong>Configure condições:</strong> Ex: Executar apenas se alguém em casa</li>
+                    <li><strong>Teste a rotina:</strong> Execute manualmente para verificar</li>
+                    <li><strong>Ative a automação:</strong> Habilite para funcionar automaticamente</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed"> <!-- guia assistentes voz -->
+                <span class="difficulty dificil">Avançado - 50 min</span>
+                <h3>Integração com Assistentes de Voz</h3>
+                <p>Como conectar seu sistema com Alexa e Google Assistant.</p>
+                
+                <h4>🔧 Configuração para Alexa:</h4>
+                <ol class="steps-list"> <!-- passos alexa -->
+                    <li><strong>Abra app Alexa:</strong> Vá em "Habilidades e Jogos"</li>
+                    <li><strong>Busque skill:</strong> Procure por "Tecnocam Smart"</li>
+                    <li><strong>Ative skill:</strong> Clique em "Ativar" e faça login</li>
+                    <li><strong>Descobrir dispositivos:</strong> Alexa irá encontrar seus dispositivos</li>
+                    <li><strong>Teste comandos:</strong> "Alexa, ligue a luz da sala"</li>
+                </ol>
+                
+                <h4>🔧 Configuração para Google Assistant:</h4>
+                <ol class="steps-list"> <!-- passos google -->
+                    <li><strong>Abra Google Home:</strong> Toque em "+ Adicionar"</li>
+                    <li><strong>Configurar dispositivo:</strong> Selecione "Trabalhar com Google"</li>
+                    <li><strong>Encontre Tecnocam:</strong> Pesquise e vincule sua conta</li>
+                    <li><strong>Sincronize dispositivos:</strong> Google importará seus dispositivos</li>
+                    <li><strong>Teste comandos:</strong> "Ok Google, desligue as luzes"</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="guides-category"> <!-- categoria problemas -->
+            <h2 class="section-title">Solução de Problemas</h2>
+            
+            <div class="guide-card-detailed"> <!-- guia dispositivo não responde -->
+                <span class="difficulty facil">Fácil - 15 min</span>
+                <h3>Dispositivo Não Responde</h3>
+                <p>Soluções para quando um dispositivo smart para de funcionar.</p>
+                
+                <h4>🔧 Solução Passo a Passo:</h4>
+                <ol class="steps-list"> <!-- passos solução -->
+                    <li><strong>Verifique energia:</strong> Confirme se está ligado na tomada</li>
+                    <li><strong>Teste manualmente:</strong> Funciona no controle físico?</li>
+                    <li><strong>Reinicie dispositivo:</strong> Desligue e ligue após 30 segundos</li>
+                    <li><strong>Verifique conexão:</strong> App mostra dispositivo como online?</li>
+                    <li><strong>Reconecte Wi-Fi:</strong> Dispositivo pode ter perdido conexão</li>
+                    <li><strong>Repareamento:</strong> Remova e adicione novamente no app</li>
+                    <li><strong>Atualize firmware:</strong> Verifique atualizações disponíveis</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed"> <!-- guia integração -->
+                <span class="difficulty medio">Médio - 25 min</span>
+                <h3>Problemas de Integração entre Dispositivos</h3>
+                <p>Quando dispositivos não se comunicam corretamente.</p>
+                
+                <h4>🔧 Solução Passo a Passo:</h4>
+                <ol class="steps-list"> <!-- passos solução -->
+                    <li><strong>Verifique compatibilidade:</strong> Todos dispositivos suportam mesmo protocolo?</li>
+                    <li><strong>Reinicie o hub:</strong> Desligue hub central por 1 minuto</li>
+                    <li><strong>Distância do hub:</strong> Dispositivos muito longes podem ter problemas</li>
+                    <li><strong>Atualize todos firmwares:</strong> Hub e dispositivos</li>
+                    <li><strong>Recrie automações:</strong> Exclua e configure novamente</li>
+                    <li><strong>Verifique interferência:</strong> Outros dispositivos wireless próximos</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="automation-tips"> <!-- dicas automação -->
+            <h2 class="section-title">Dicas de Automação</h2>
+            <div class="tips-grid"> <!-- grid dicas -->
+                <div class="tip-card"> <!-- dica economia -->
+                    <span class="material-symbols-outlined">energy_savings_leaf</span>
+                    <h4>Economia de Energia</h4>
+                    <p>Programe desligamento automático quando não houver ninguém em casa</p>
+                </div>
+                <div class="tip-card"> <!-- dica segurança -->
+                    <span class="material-symbols-outlined">security</span>
+                    <h4>Segurança Inteligente</h4>
+                    <p>Crie modo "férias" que simula presença com luzes aleatórias</p>
+                </div>
+                <div class="tip-card"> <!-- dica acessibilidade -->
+                    <span class="material-symbols-outlined">elderly</span>
+                    <h4>Acessibilidade</h4>
+                    <p>Configure comandos de voz para idosos ou pessoas com mobilidade reduzida</p>
+                </div>
+                <div class="tip-card"> <!-- dica família -->
+                    <span class="material-symbols-outlined">family_restroom</span>
+                    <h4>Rotina Familiar</h4>
+                    <p>Crie cenários diferentes para cada membro da família</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-contact"> <!-- contato suporte -->
+            <div class="contact-card"> <!-- card contato -->
+                <div class="contact-icon">
+                    <span class="material-symbols-outlined">support_agent</span>
+                </div>
+                <div class="contact-info">
+                    <h3>Projeto Personalizado</h3>
+                    <p>Quer uma casa totalmente automatizada? Nossos especialistas criam soluções sob medida</p>
+                    <div class="contact-buttons"> <!-- botoes contato -->
+                        <button class="btn-primary" onclick="window.open('https://api.whatsapp.com/send?phone=554188046891&text=Quero um projeto de casa inteligente', '_blank')">
+                            Consultoria Gratuita
+                        </button>
+                        <button class="btn-secondary" onclick="window.location.href='suporte.html'">
+                            Voltar ao Suporte
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"> <!-- footer -->
+    <div class="footer-container">
+        <div class="footer-social"> <!-- redes sociais -->
+            <h3 class="social-title">Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" id="facebook">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tecnocam2025" class="social-icon1" target="_blank" id="instagram">
+                    <img src="img/ins.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" class="social-icon1" target="_blank" id="youtube">
+                    <img src="img/you.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/feed" class="social-icon" target="_blank" id="linkedin">
+                    <img src="img/link.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-content"> <!-- conteúdo footer -->
+            <div class="footer-column"> <!-- institucional -->
+                <h3 class="footer-title">Institucional</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Sobre a Tecnocam</a></li>
+                    <li><a href="#" class="footer-link">Responsabilidade Social</a></li>
+                    <li><a href="#" class="footer-link">Meio Ambiente</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column"> <!-- políticas -->
+                <h3 class="footer-title">Políticas</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link">Políticas de Entrega</a></li>
+                    <li><a href="#" class="footer-link">Política de Troca e Devolução</a></li>
+                    <li><a href="#" class="footer-link">Política de Pagamento</a></li>
+                    <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Regulamentos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column"> <!-- atendimento -->
+                <h3 class="footer-title">Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Fale Conosco</a></li>
+                    <li class="footer-contact">(55) 3281-9730 | tecnocam@</li>
+                    <li class="footer-contact">Seg/Sex - 8h00 às 17h30</li>
+                </ul>
+            </div>
+
+            <div class="footer-column"> <!-- pagamento -->
+                <h3 class="footer-title">Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"><img src="img/visa.png" alt=""></div>
+                    <div class="payment-icon mastercard"><img src="img/master.png" alt=""></div>
+                    <div class="payment-icon elo"><img src="img/elo.png" alt=""></div>
+                    <div class="payment-icon pix"><img src="img/pix.png" alt=""></div>
+                    <div class="payment-icon boleto"><img src="img/boleto.png" alt=""></div>
+                    <div class="payment-icon nubank"><img src="img/nua.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <div> <!-- btn zap -->
+        <a href="https://api.whatsapp.com/send?phone=554188046891&text=Quero%20fazer%20um%20agendamento%20hoje!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+            <img src="img/whatssapp.svg" alt="btn whatssapp"><span class="tooltip-text">Agende seu horário</span>
+        </a>
+    </div>
+</body>
+</html>

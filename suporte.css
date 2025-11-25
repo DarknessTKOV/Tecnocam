@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--bege-claro) !important;
+    color: var(--preto-carvao);
+}
+body.dark-mode .support-sidebar{
+    background-color: var(--background);
+}
+body.dark-mode .sidebar-menu a{
+    background: var(--bege-claro);
+    color: var(--verde-valor);
+    transition: all 0.3s ease;
+}
+body.dark-mode .user-avatar{
+    background-color: var(--bege-claro);
+    color: var(--kosmo-blue);
+}
+body.dark-mode .sidebar-menu a:hover,
+body.dark-mode .sidebar-menu a.active {
+    background: var(--verde-valor);
+    color: white;
+    box-shadow: var(--verde-valor) 0px 0px 10px;
+    transform: scale(1.03);
+}
+body.dark-mode .support-content{
+    background-color: var(--background);
+}
+body.dark-mode .booking-card{
+    background: linear-gradient(135deg, var(--bege-claro) 0%, var(--background) 100%);
+}
+body.dark-mode .btn-primary{
+    background-color: var(--bege-claro);
+    color: var(--verde-valor);
+}
+body.dark-mode .btn-primary:hover{
+    background-color: var(--bege-claro);
+    color: var(--verde-valor);
+    border: 1px solid var(--dourado);
+    box-shadow: var(--dourado) 0px 0px 10px;
+}
+body.dark-mode .problem-item{
+    background-color: var(--background);
+    border: 1px solid var(--kosmo-blue);
+    transition: all 0.3s ease;
+}
+body.dark-mode .problem-item:hover{
+    background-color: var(--background);
+    box-shadow: var(--kosmo-blue) 0px 0px 10px;
+    transform: scale(1.03);
+}
+body.dark-mode .solution-btn{
+    background-color: var(--bege-claro);
+    color: var(--verde-valor);
+}
+body.dark-mode .modal-header{
+    background-color: var(--background);
+    border-bottom: 1px solid var(--kosmo-blue);
+}
+body.dark-mode .solution-content{
+    background-color: var(--bege-claro);
+}
+body.dark-mode .solution-step{
+    border-bottom: 1px solid var(--kosmo-blue);
+}
+body.dark-mode .step-number{
+    background-color: var(--background);
+    color: var(--dourado);
+}
+body.dark-mode .btn-secondary{
+    background-color: var(--background);
+    color: var(--dourado);
+    border: 1px solid var(--dourado);
+}
+body.dark-mode .back-button{
+    background-color: var(--kosmo-blue);
+    transition: all 0.3s ease;
+}
+body.dark-mode .back-button:hover{
+    background-color: var(--azul-titulo);
+    box-shadow: var(--azul-titulo) 0px 0px 10px;
+}
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #2c5aa0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-left:130px;
+    margin-top: 80px;
+    font-size: 15px;
+}
+        
+.back-button:hover {
+    background-color: #1e3f73;
+    transform: translateY(-2px);
+}
+        
+.back-icon {
+    width: 16px;
+    height: 16px;
+}    
+/* Suporte Técnico Styles */
+.support-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.support-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.support-header h1 {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 36px;
+    color: var(--azul-titulo);
+    margin-bottom: 10px;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+}
+
+.support-sidebar {
+    background: var(--bege-claro);
+    border-radius: 20px;
+    padding: 30px;
+    height: fit-content;
+}
+.suporte-tecnico .ajuda {
+  padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--cinza-areia);
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--dourado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 5px;
+}
+
+.user-email {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: var(--preto-carvao);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+    background: white;
+    color: var(--dourado);
+}
+
+.sidebar-menu .material-symbols-outlined {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.support-content {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: var(--sombra);
+}
+
+.section-title {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 24px;
+    color: var(--azul-titulo);
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--dourado);
+    padding-bottom: 10px;
+}
+
+/* Seção de Agendamento */
+.booking-section {
+    margin-bottom: 50px;
+}
+
+.booking-card {
+    background: linear-gradient(135deg, var(--bege-claro) 0%, #f0ede8 100%);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--dourado);
+}
+
+.booking-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.booking-icon {
+    width: 90px;
+    height: 60px;
+    background: var(--dourado);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.booking-icon .material-symbols-outlined {
+    font-size: 32px;
+}
+
+.booking-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 8px;
+}
+
+.booking-text p {
+    color: var(--muted);
+    margin: 0;
+}
+
+.btn-primary {
+    background: var(--preto-btn);
+    color: var(--verde-valor);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background: var(--verde-valor);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Guias Rápidos */
+.guides-section {
+    margin-bottom: 50px;
+}
+
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.guide-card {
+    background: var(--bege-claro);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--dourado);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.guide-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--dourado);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+}
+
+.guide-icon .material-symbols-outlined {
+    font-size: 30px;
+}
+
+.guide-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 10px;
+}
+
+.guide-card p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.guide-btn {
+    background: transparent;
+    color: var(--dourado);
+    border: 1px solid var(--dourado);
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.guide-btn:hover {
+    background: var(--dourado);
+    color: white;
+}
+
+/* Solução de Problemas */
+.troubleshooting-section {
+    margin-bottom: 50px;
+}
+
+.problem-category {
+    background: var(--bege-claro);
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.problem-category h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 20px;
+}
+
+.problem-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.problem-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--cinza-areia);
+}
+
+.problem-title {
+    font-weight: 500;
+    color: var(--preto-carvao);
+}
+
+.solution-btn {
+    background: var(--preto-btn);
+    color: var(--verde-valor);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.solution-btn:hover {
+    background: var(--verde-valor);
+    color: white;
+}
+
+/* Contato Técnico */
+.technical-contact {
+    margin-bottom: 30px;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.contact-option {
+    background: var(--bege-claro);
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--dourado);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.contact-icon .material-symbols-outlined {
+    font-size: 24px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+.contact-detail {
+    display: block;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 5px;
+}
+
+.contact-hours {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--preto-carvao);
+    border: 1px solid var(--cinza-areia);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    border-color: var(--preto-carvao);
+    background: var(--preto-carvao);
+    color: white;
+}
+
+/* Modais */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid var(--cinza-areia);
+}
+
+.modal-header h2 {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 20px;
+    color: var(--azul-titulo);
+    margin: 0;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--muted);
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: var(--preto-carvao);
+}
+
+.booking-form {
+    padding: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--cinza-areia);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--dourado);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.solution-content {
+    padding: 25px;
+}
+
+.solution-step {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--cinza-areia);
+}
+
+.solution-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.step-number {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: var(--dourado);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.step-title {
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 8px;
+}
+
+.step-description {
+    color: var(--preto-carvao);
+    line-height: 1.6;
+    margin-left: 34px;
+}
+.breadcrumb-link img{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 30px;
+}
+/* Responsivo */
+@media (max-width: 768px) {
+    .support-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .support-sidebar {
+        order: 2;
+    }
+    
+    .support-content {
+        order: 1;
+        padding: 20px;
+    }
+    
+    .booking-card {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .booking-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .guides-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-option {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .problem-item {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+}

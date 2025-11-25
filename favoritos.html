@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos - Tecnocam</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="favoritos.css">
+    <script src="./main.js" defer></script>
+    <script src="./favoritos.js" defer></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="tecnocam"> <!-- topo header -->
+            <img src="img/logo.png" alt="" class="logo">
+            <h1>Tecnocam</h1>
+            <div class="search"> <!-- busca -->
+                <label for="searchInput">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <a href="suporte.html" rel="noopener noreferrer"><img src="img/suport.svg" alt="" class="h-icon1"></a>
+            <a href="login.html"><img src="img/login.svg" alt="" class="h-icon2"></a>
+            <a href="meus-pedidos.html"><img src="img/carrinho.svg" alt="" class="h-icon3"></a>
+        </div>
+
+        <div> 
+            <nav class="navbar"> <!-- navbar -->
+                <div class="menu-container"> <!-- menu dropdown -->
+                    <img src="img/menu.svg" alt="menu" class="menu-icon">
+                    <div class="dropdown-menu">
+                        <a href="minha-conta.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">person</span>
+                            Minha Conta
+                        </a>
+                        <a href="meus-pedidos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">shopping_bag</span>
+                            Meus Pedidos
+                        </a>
+                        <a href="favoritos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">favorite</span>
+                            Favoritos
+                        </a>
+                        <a href="ajuda.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">help</span>
+                            Ajuda
+                        </a>
+                        <a href="suporte.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">support_agent</span>
+                            Suporte Técnico
+                        </a>
+                        <button class="dropdown-item theme-toggle-btn" id="themeToggle">
+                            <span class="material-symbols-outlined dropdown-icon">dark_mode</span>
+                            Modo Escuro
+                        </button>
+                    </div>
+                </div>
+                <a href="#todas-categorias" class="nav-links">Todas as categorias</a>
+                <a href="#mais-vendidos" class="nav-links">Mais vendidos</a>
+                <a href="#casa-inteligente" class="nav-links">Casa Inteligente</a>
+                <a href="#interfones" class="nav-links">Interfones</a>
+                <a href="#cameras" class="nav-links">Câmeras</a>
+                <p>|</p>
+                <a href="#kits" class="nav-links">Kits</a>
+                <a href="#instalacao" class="nav-link">Instalação</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="back-button-container"> <!-- btn voltar -->
+        <a href="index.html" class="back-button">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+            Voltar
+        </a>
+    </div>
+
+    <main class="favorites-container"> <!-- container favoritos -->
+        <div class="favorites-header"> <!-- cabeçalho favoritos -->
+            <h1>Meus Favoritos</h1>
+            <p>Seus produtos favoritados para comprar depois</p>
+        </div>
+
+        <div class="favorites-grid"> <!-- grid favoritos -->
+            <aside class="favorites-sidebar"> <!-- sidebar -->
+                <div class="user-info"> <!-- info usuário -->
+                    <div class="user-avatar">U</div>
+                    <div class="user-name">Usuário Tecnocam</div>
+                    <div class="user-email">usuario@email.com</div>
+                </div>
+                
+                <ul class="sidebar-menu"> <!-- menu lateral -->
+                    <li><a href="minha-conta.html">
+                        <span class="material-symbols-outlined">person</span>
+                        Dados Pessoais
+                    </a></li>
+                    <li><a href="meus-pedidos.html">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        Meus Pedidos
+                    </a></li>
+                    <li><a href="favoritos.html" class="active">
+                        <span class="material-symbols-outlined">favorite</span>
+                        Favoritos
+                    </a></li>
+                    <li><a href="ajuda.html">
+                        <span class="material-symbols-outlined">help</span>
+                        Ajuda
+                    </a></li>
+                    <li><a href="suporte.html" >
+                        <span class="material-symbols-outlined">support_agent</span>
+                        Suporte Técnico
+                    </a></li>
+                </ul>
+            </aside>
+
+            <div class="favorites-content"> <!-- conteúdo favoritos -->
+                <div class="favorites-actions"> <!-- ações favoritos -->
+                    <div class="favorites-count"> <!-- contador -->
+                        <span id="favoritesCount">0</span> produtos favoritados
+                    </div>
+                    <div class="favorites-filters"> <!-- filtros -->
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="available">Disponíveis</button>
+                        <button class="filter-btn" data-filter="promotion">Em promoção</button>
+                        <button class="clear-all" id="clearAll">Limpar todos</button>
+                    </div>
+                </div>
+
+                <div class="favorites-products" id="favoritesProducts"> <!-- produtos favoritos -->
+                </div>
+
+                <div class="empty-favorites" id="emptyFavorites" style="display: none;"> <!-- vazio -->
+                    <div class="empty-icon">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                    <h3>Nenhum produto favoritado</h3>
+                    <p>Você ainda não adicionou nenhum produto aos favoritos.</p>
+                    <a href="index.html" class="btn-primary">Explorar produtos</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"> <!-- footer -->
+    <div class="footer-container">
+        <div class="footer-social"> <!-- redes sociais -->
+            <h3 class="social-title">Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" id="facebook">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tecnocam2025" class="social-icon1" target="_blank" id="instagram">
+                    <img src="img/ins.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" class="social-icon1" target="_blank" id="youtube">
+                    <img src="img/you.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/feed" class="social-icon" target="_blank" id="linkedin">
+                    <img src="img/link.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-content"> <!-- conteúdo footer -->
+            <div class="footer-column"> <!-- institucional -->
+                <h3 class="footer-title">Institucional</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Sobre a Tecnocam</a></li>
+                    <li><a href="#" class="footer-link">Responsabilidade Social</a></li>
+                    <li><a href="#" class="footer-link">Meio Ambiente</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column"> <!-- políticas -->
+                <h3 class="footer-title">Políticas</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link">Políticas de Entrega</a></li>
+                    <li><a href="#" class="footer-link">Política de Troca e Devolução</a></li>
+                    <li><a href="#" class="footer-link">Política de Pagamento</a></li>
+                    <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Regulamentos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column"> <!-- atendimento -->
+                <h3 class="footer-title">Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Fale Conosco</a></li>
+                    <li class="footer-contact">(55) 3281-9730 | tecnocam@</li>
+                    <li class="footer-contact">Seg/Sex - 8h00 às 17h30</li>
+                </ul>
+            </div>
+
+            <div class="footer-column"> <!-- pagamento -->
+                <h3 class="footer-title">Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"><img src="img/visa.png" alt=""></div>
+                    <div class="payment-icon mastercard"><img src="img/master.png" alt=""></div>
+                    <div class="payment-icon elo"><img src="img/elo.png" alt=""></div>
+                    <div class="payment-icon pix"><img src="img/pix.png" alt=""></div>
+                    <div class="payment-icon boleto"><img src="img/boleto.png" alt=""></div>
+                    <div class="payment-icon nubank"><img src="img/nua.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <div> <!-- btn zap -->
+        <a href="https://api.whatsapp.com/send?phone=554188046891&text=Quero%20fazer%20um%20agendamento%20hoje!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="img/whatssapp.svg" alt="btn whatssapp"><span class="tooltip-text">Agende seu horário</span></a>
+    </div>
+</body>
+</html>

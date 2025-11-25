@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Técnico - Tecnocam</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="suporte.css">
+    <script src="./main.js" defer></script>
+    <script src="./suporte.js" defer></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="tecnocam"> <!--Parte de cima header-->
+        <img src="img/logo.png" alt="" class="logo">
+            <h1>Tecnocam</h1>
+        <div class="search">
+                <label for="searchInput">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <a href="suporte.html" rel="noopener noreferrer">
+                <img src="img/suport.svg" alt="" class="h-icon1">
+            </a>
+            <a href="login.html"><img src="img/login.svg" alt="" class="h-icon2"></a>
+            <a href="meus-pedidos.html"><img src="img/carrinho.svg" alt="" class="h-icon3"></a>
+        </div>
+
+        <div> <!--Navbar-->
+            <nav class="navbar"> 
+                <div class="menu-container">
+                    <img src="img/menu.svg" alt="menu" class="menu-icon">
+                    <div class="dropdown-menu">
+                        <a href="minha-conta.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">person</span>
+                            Minha Conta
+                        </a>
+                        <a href="meus-pedidos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">shopping_bag</span>
+                            Meus Pedidos
+                        </a>
+                        <a href="favoritos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">favorite</span>
+                            Favoritos
+                        </a>
+                        <a href="ajuda.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">help</span>
+                            Ajuda
+                        </a>
+                        <a href="suporte.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">support_agent</span>
+                            Suporte Técnico
+                        </a>
+                        <button class="dropdown-item theme-toggle-btn" id="themeToggle">
+                            <span class="material-symbols-outlined dropdown-icon">dark_mode</span>
+                            Modo Escuro
+                        </button>
+
+                    </div>
+                </div>
+                <a href="#todas-categorias" class="nav-links">Todas as categorias</a>
+                <a href="#mais-vendidos" class="nav-links">Mais vendidos</a>
+                <a href="#casa-inteligente" class="nav-links">Casa Inteligente</a>
+                <a href="#interfones" class="nav-links">Interfones</a>
+                <a href="#cameras" class="nav-links">Câmeras</a>
+                <p>|</p>
+                <a href="#kits" class="nav-links">Kits</a>
+                <a href="#instalacao" class="nav-link">Instalação</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="back-button-container">
+        <a href="index.html" class="back-button">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+            Voltar
+        </a>
+    </div>
+
+    <main class="support-container">
+        <div class="support-header">
+            <h1>Suporte Técnico</h1>
+            <p>Assistência especializada para seus produtos Tecnocam</p>
+        </div>
+
+        <div class="support-grid">
+            <aside class="support-sidebar">
+                <div class="user-info">
+                    <div class="user-avatar">U</div>
+                    <div class="user-name">Usuário Tecnocam</div>
+                    <div class="user-email">usuario@email.com</div>
+                </div>
+                
+                <ul class="sidebar-menu">
+                    <li><a href="minha-conta.html">
+                        <span class="material-symbols-outlined">person</span>
+                        Dados Pessoais
+                    </a></li>
+                    <li><a href="meus-pedidos.html">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        Meus Pedidos
+                    </a></li>
+                    <li><a href="favoritos.html">
+                        <span class="material-symbols-outlined">favorite</span>
+                        Favoritos
+                    </a></li>
+                    <li><a href="ajuda.html">
+                        <span class="material-symbols-outlined">help</span>
+                        Ajuda
+                    </a></li>
+                    <li><a href="suporte.html" class="active">
+                        <span class="material-symbols-outlined">support_agent</span>
+                        Suporte Técnico
+                    </a></li>
+                </ul>
+            </aside>
+
+            <div class="support-content">
+                <!-- Seção de Agendamento -->
+                <section class="booking-section">
+                    <h2 class="section-title">Agende seu Suporte</h2>
+                    <div class="booking-card">
+                        <div class="booking-info">
+                            <div class="booking-icon">
+                                <span class="material-symbols-outlined">calendar_clock</span>
+                            </div>
+                            <div class="booking-text">
+                                <h3>Suporte Técnico Presencial</h3>
+                                <p>Nossos técnicos especializados vão até você para instalação, configuração e manutenção</p>
+                            </div>
+                        </div>
+                        <button class="btn-primary" id="openBookingModal">Agendar Visita Técnica</button>
+                    </div>
+                </section>
+
+                <!-- Guias Rápidas -->
+                <section class="guides-section">
+                    <h2 class="section-title">Guias Rápidos</h2>
+                    <div class="guides-grid">
+                        <div class="guide-card" data-category="camera">
+                            <div class="guide-icon">
+                                <span class="material-symbols-outlined">videocam</span>
+                            </div>
+                            <h3>Câmeras</h3>
+                            <p>Instalação e configuração de câmeras de segurança</p>
+                            <a href="guias-camera.html"><button class="guide-btn">Ver Guias</button></a>
+                        </div>
+
+                        <div class="guide-card" data-category="wifi">
+                            <div class="guide-icon">
+                                <span class="material-symbols-outlined">wifi</span>
+                            </div>
+                            <h3>Wi-Fi e Rede</h3>
+                            <p>Configuração de rede e conectividade</p>
+                            <a href="guias-wifi.html"><button class="guide-btn">Ver Guias</button></a>
+                        </div>
+                        <div class="guide-card" data-category="smart">
+                            <div class="guide-icon">
+                                <span class="material-symbols-outlined">home</span>
+                            </div>
+                            <h3>Casa Inteligente</h3>
+                            <p>Automação residencial e dispositivos IoT</p>
+                            <a href="guia-casa-inteligente.html"><button class="guide-btn">Ver Guias</button></a>
+                        </div>
+
+                        <div class="guide-card" data-category="dvr">
+                            <div class="guide-icon">
+                                <span class="material-symbols-outlined">storage</span>
+                            </div>
+                            <h3>DVR/NVR</h3>
+                            <p>Configuração de gravadores e armazenamento</p>
+                            <a href="guias-dvr.html"><button class="guide-btn">Ver Guias</button></a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Solução de Problemas -->
+                <section class="troubleshooting-section">
+                    <h2 class="section-title">Solução de Problemas</h2>
+                    <div class="troubleshooting-list">
+                        <div class="problem-category">
+                            <h3>Problemas Comuns</h3>
+                            <div class="problem-items">
+                                <div class="problem-item">
+                                    <span class="problem-title">Câmera não conecta ao Wi-Fi</span>
+                                    <button class="solution-btn" data-problem="wifi-connection">Ver Solução</button>
+                                </div>
+                                <div class="problem-item">
+                                    <span class="problem-title">Imagem da câmera está ruim</span>
+                                    <button class="solution-btn" data-problem="image-quality">Ver Solução</button>
+                                </div>
+                                <div class="problem-item">
+                                    <span class="problem-title">App não encontra dispositivos</span>
+                                    <button class="solution-btn" data-problem="app-connection">Ver Solução</button>
+                                </div>
+                                <div class="problem-item">
+                                    <span class="problem-title">DVR não grava</span>
+                                    <button class="solution-btn" data-problem="dvr-recording">Ver Solução</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contato Técnico -->
+                <section class="technical-contact">
+                    <h2 class="section-title">Contato Técnico</h2>
+                    <div class="contact-options">
+                        <div class="contact-option">
+                            <div class="contact-icon">
+                                <span class="material-symbols-outlined">phone</span>
+                            </div>
+                            <div class="contact-info">
+                                <h3>WhatsApp Técnico</h3>
+                                <p>Suporte rápido por mensagem</p>
+                                <span class="contact-detail">(41) 8804-6891</span>
+                                <button class="btn-secondary" onclick="openWhatsApp()">Abrir WhatsApp</button>
+                            </div>
+                        </div>
+
+                        <div class="contact-option">
+                            <div class="contact-icon">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div class="contact-info">
+                                <h3>Telefone Técnico</h3>
+                                <p>Atendimento especializado</p>
+                                <span class="contact-detail">(55) 3281-9730</span>
+                                <span class="contact-hours">Seg-Sex: 8h-18h | Sáb: 8h-12h</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-option">
+                            <div class="contact-icon">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div class="contact-info">
+                                <h3>E-mail Técnico</h3>
+                                <p>Para casos complexos</p>
+                                <span class="contact-detail">tecnico@tecnocam.com</span>
+                                <button class="btn-secondary" onclick="openEmail()">Enviar E-mail</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Agendamento -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Agendar Visita Técnica</h2>
+                <button class="modal-close" id="closeBookingModal">&times;</button>
+            </div>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="productType">Tipo de Produto</label>
+                    <select id="productType" required>
+                        <option value="">Selecione o produto</option>
+                        <option value="camera">Câmera de Segurança</option>
+                        <option value="dvr">DVR/NVR</option>
+                        <option value="smart-home">Casa Inteligente</option>
+                        <option value="intercom">Interfone</option>
+                        <option value="network">Rede e Wi-Fi</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="problemDescription">Descrição do Problema</label>
+                    <textarea id="problemDescription" placeholder="Descreva o problema ou serviço necessário..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredDate">Data Preferida</label>
+                    <input type="date" id="preferredDate" required min="">
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredTime">Horário Preferido</label>
+                    <select id="preferredTime" required>
+                        <option value="">Selecione o horário</option>
+                        <option value="08:00-10:00">08:00 - 10:00</option>
+                        <option value="10:00-12:00">10:00 - 12:00</option>
+                        <option value="13:00-15:00">13:00 - 15:00</option>
+                        <option value="15:00-17:00">15:00 - 17:00</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactPhone">Telefone para Contato</label>
+                    <input type="tel" id="contactPhone" placeholder="(11) 99999-9999" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="cancelBooking">Cancelar</button>
+                    <button type="submit" class="btn-primary">Confirmar Agendamento</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Solução -->
+    <div class="modal" id="solutionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="solutionTitle">Solução do Problema</h2>
+                <button class="modal-close" id="closeSolutionModal">&times;</button>
+            </div>
+            <div class="solution-content" id="solutionContent">
+                <!-- Conteúdo da solução será inserido via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer"> <!--Footer-->
+    <div class="footer-container">
+        <!-- Redes Sociais no topo -->
+        <div class="footer-social">
+            <h3 class="social-title">Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" id="facebook">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tecnocam2025" class="social-icon1" target="_blank" id="instagram">
+                    <img src="img/ins.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" class="social-icon1" target="_blank" id="youtube">
+                    <img src="img/you.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/feed" class="social-icon" target="_blank" id="linkedin">
+                    <img src="img/link.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal do Footer -->
+        <div class="footer-content">
+            <!-- Coluna Institucional -->
+            <div class="footer-column">
+                <h3 class="footer-title">Institucional</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Sobre a Tecnocam</a></li>
+                    <li><a href="#" class="footer-link">Responsabilidade Social</a></li>
+                    <li><a href="#" class="footer-link">Meio Ambiente</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Políticas -->
+            <div class="footer-column">
+                <h3 class="footer-title">Políticas</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link">Políticas de Entrega</a></li>
+                    <li><a href="#" class="footer-link">Política de Troca e Devolução</a></li>
+                    <li><a href="#" class="footer-link">Política de Pagamento</a></li>
+                    <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Regulamentos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Atendimento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Fale Conosco</a></li>
+                    <li class="footer-contact">(55) 3281-9730 | tecnocam@</li>
+                    <li class="footer-contact">Seg/Sex - 8h00 às 17h30</li>
+                </ul>
+            </div>
+
+            <!-- Coluna Pagamento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"><img src="img/visa.png" alt=""></div>
+                    <div class="payment-icon mastercard"><img src="img/master.png" alt=""></div>
+                    <div class="payment-icon elo"><img src="img/elo.png" alt=""></div>
+                    <div class="payment-icon pix"><img src="img/pix.png" alt=""></div>
+                    <div class="payment-icon boleto"><img src="img/boleto.png" alt=""></div>
+                    <div class="payment-icon nubank"><img src="img/nua.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=554188046891&text=Quero%20fazer%20um%20agendamento%20hoje!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+        <img src="img/whatssapp.svg" alt="btn whatssapp"><span class="tooltip-text">Agende seu horário</span></a>
+    </div>
+</body>
+</html>

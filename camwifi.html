@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmera Inteligente 3MP Branca Tecnocam - Aboguer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produtos.css">
+    <script src="./main.js" defer></script>
+    <script src="./produto.js" defer></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="tecnocam"> <!--Parte de cima header-->
+        <img src="img/logo.png" alt="" class="logo">
+            <h1>Tecnocam</h1>
+        <div class="search">
+                <label for="searchInput">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <a href="suporte.html" rel="noopener noreferrer">
+                <img src="img/suport.svg" alt="" class="h-icon1">
+            </a>
+            <a href="login.html"><img src="img/login.svg" alt="" class="h-icon2"></a>
+            <a href="meus-pedidos.html"><img src="img/carrinho.svg" alt="" class="h-icon3"></a>
+        </div>
+
+        <div> 
+            <nav class="navbar"> <!--Navbar-->
+                <div class="menu-container">
+                    <img src="img/menu.svg" alt="menu" class="menu-icon">
+                    <div class="dropdown-menu">
+                        <a href="minha-conta.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">person</span>
+                            Minha Conta
+                        </a>
+                        <a href="meus-pedidos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">shopping_bag</span>
+                            Meus Pedidos
+                        </a>
+                        <a href="favoritos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">favorite</span>
+                            Favoritos
+                        </a>
+                        <a href="ajuda.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">help</span>
+                            Ajuda
+                        </a>
+                        <a href="suporte.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">support_agent</span>
+                            Suporte Técnico
+                        </a>
+                        <button class="dropdown-item theme-toggle-btn" id="themeToggle">
+                            <span class="material-symbols-outlined dropdown-icon">dark_mode</span>
+                            Modo Escuro
+                        </button>
+
+                    </div>
+                </div>
+                <a href="#todas-categorias" class="nav-links">Todas as categorias</a>
+                <a href="#mais-vendidos" class="nav-links">Mais vendidos</a>
+                <a href="#casa-inteligente" class="nav-links">Casa Inteligente</a>
+                <a href="#interfones" class="nav-links">Interfones</a>
+                <a href="#cameras" class="nav-links">Câmeras</a>
+                <p>|</p>
+                <a href="#kits" class="nav-links">Kits</a>
+                <a href="#instalacao" class="nav-link">Instalação</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="back-button-container">
+        <a href="index.html" class="back-button">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+            Voltar
+        </a>
+    </div>
+
+    <main class="product-page">
+        <div class="product-container">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <div class="image-container">
+                        <img id="mainImage" src="img/bullet.png" alt="Fechadura Inteligente de Embutir com Biometria">
+                        <div class="action-buttons">
+                            <button class="heart-btn" title="Adicionar aos favoritos">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </button>
+                            <button class="share-btn" title="Compartilhar produto">
+                                <span class="material-symbols-outlined">share</span>
+                            </button>
+                            <button class="zoom-btn" title="Ampliar imagem">
+                                <span class="material-symbols-outlined">zoom_in</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail-gallery">
+                    <img src="img/bullet.png" alt="Fechadura - Vista 1" class="thumbnail">
+                    <img src="img/camwi.png" alt="Fechadura - Vista 2" class="thumbnail">
+                    <img src="img/camwi2.png" alt="Fechadura - Vista 3" class="thumbnail">
+                    <video src="video/camwifi.mp4" class="thumbnail"></video>
+                </div>
+            </div>
+
+            <!-- Modal Lightbox para Galeria de Imagens -->
+            <div class="modal-lightbox" id="galleryLightbox">
+                <button class="lightbox-close">×</button>
+                <button class="lightbox-nav lightbox-prev">‹</button>
+                <button class="lightbox-nav lightbox-next">›</button>
+                <div class="lightbox-content">
+                    <div id="lightboxImage"></div>
+                    <div class="lightbox-caption">
+                        <span id="lightboxCounter">1 / 4</span>
+                    </div>
+                    <div class="lightbox-thumbnails" id="lightboxThumbnails">
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="product-info"> <!-- Informações do produto -->
+                <h1 class="product-title">Câmera Inteligente Wi-Fi iM5 SC Full HD Tecnocam</h1>
+                
+                <div class="rating-and-discount">
+                    <div class="rating-section">
+                        <span class="rating-number">4.9</span>
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                        <span class="review-count">(2024)</span>
+                    </div>
+                    <span class="discount-badge">-41% OFF</span>
+                </div>
+
+                <div class="product-code">
+                    Id do produto: 45904237
+                </div>
+
+                <div class="price-section">
+                    <div class="price-row">
+                        <span class="price-label">De:</span>
+                        <span class="original-price">R$ 561,90</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-label">por:</span>
+                        <span class="current-price">R$ 315,90</span>
+                        <span class="price-note">à vista</span>
+                    </div>
+                    <div class="installment-info">
+                        ou 8x de R$ 39,48 sem juros
+                    </div>
+                </div>
+
+                <div class="payment-methods">
+                    <a href="#" class="payment-link">Ver formas de pagamento></a>
+                </div>
+
+                <div class="shipping-info">
+                    <img src="img/kosmofull.svg" alt="KosmoFull" class="shipping-logo">
+                    <span class="shipping-text">KosmoFull</span>
+                </div>
+
+                <div class="color-section">
+                    <h3>Cores disponíveis</h3>
+                    <div class="color-buttons">
+                        <button class="color-btn branco active" title="Branco">Branco</button>
+                    </div>
+                </div>
+
+                <div class="quantity-section">
+                    <label for="quantity">Quantidade</label>
+                    <div class="quantity-input">
+                        <button class="qty-btn minus">−</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="action-buttons-main">
+                    <button class="buy-btn">Compre agora</button>
+                    <button class="cart-btn">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+
+       
+        <section class="complementary-products"> <!-- Produtos complementares -->
+            <h2>Produtos complementares</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="img/inswifi.png" alt="Instalação Câmera Wi-Fi">
+                    </div>
+                    <h3>Instalação da câmera wi-fi</h3>
+                    <div class="card-price original-variant">
+                        <span class="original-price">R$ 200,00</span>
+                        <span class="discount">-10% OFF</span>
+                    </div>
+                    <div class="card-price">
+                        <span class="price">R$ 180,00</span>
+                        <span class="price-type">à vista</span>
+                    </div>
+                    <div class="installment">
+                        ou 5x de R$ 36,00 sem juros
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="img/sd.png" alt="Cartão de Memória MicroSD 256GB">
+                    </div>
+                    <h3>Cartão de Memória MicroSD 256GB</h3>
+                    <div class="card-price original-variant">
+                        <span class="original-price">R$ 438,90</span>
+                        <span class="discount">-13% OFF</span>
+                    </div>
+                    <div class="card-price">
+                        <span class="price">R$ 381,84</span>
+                        <span class="price-type">à vista</span>
+                    </div>
+                    <div class="installment">
+                        ou 7x de R$ 54,54 sem juros
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="img/dvrc.png" alt="Gravador de vídeo Multi HD">
+                    </div>
+                    <h3>Gravador de vídeo com 8 canais</h3>
+                    <div class="card-price original-variant">
+                        <span class="original-price">R$ 736,08</span>
+                        <span class="discount">-10% OFF</span>
+                    </div>
+                    <div class="card-price">
+                        <span class="price">R$ 669,90</span>
+                        <span class="price-type">à vista</span>
+                    </div>
+                    <div class="installment">
+                        ou 12x de R$ 55,75 sem juros
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="img/im7.png" alt="Câmera Inteligente Wi-Fi" style="max-width: 200px; max-height: 200px;">
+                    </div>
+                    <h3>Câmera Inteligente Wi-Fi Full HD</h3>
+                    <div class="card-price original-variant">
+                        <span class="original-price">R$ 679,90</span>
+                        <span class="discount">-41% OFF</span>
+                    </div>
+                    <div class="card-price">
+                        <span class="price">R$ 401,14</span>
+                        <span class="price-type">à vista</span>
+                    </div>
+                    <div class="installment">
+                        ou 8x de R$ 50,14 sem juros
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="product-features"> <!-- Características do produto -->
+            <h2>Características do produto</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="img/reso.svg" alt=""></div>
+                    <h3>Resolução</h3>
+                    <p class="feature-title">Câmera modelo dome com 360°</p>
+                    <p class="feature-description">Com resolução em 4MP, possuindo tecnologia Full color, com um zoom de 8x junto de uma lente de 4,6mm e reconhecimento por IA</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="img/wifi.svg" alt=""></div>
+                    <h3>Conectividade</h3>
+                    <p class="feature-title">Câmera com conexão via wi-fi</p>
+                    <p class="feature-description">Com conexão integrada com wi-fi, podendo ser controlado pelo aplicativo diretamente do seu celular</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="img/temp.svg" alt=""></div>
+                    <h3>Temperatura</h3>
+                    <p class="feature-title">Câmera com proteção térmica</p>
+                    <p class="feature-description">Com resistência a temperaturas superiores a 50°C e inferiores a 20°C, ideal! para vários ambientes</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="img/hd.svg" alt=""></div>
+                    <h3>Armazenamento</h3>
+                    <p class="feature-title">Câmera com armazenamento</p>
+                    <p class="feature-description">A câmera tem disposição tanto com cartão Sd, podendo ser colocado na câmera diretamente, e também no hd interno do Dvr, armazenando as filmagens por alguns dias</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="img/mic.svg" alt=""></div>
+                    <h3>Microfone</h3>
+                    <p class="feature-title">Câmera com sistema de áudio</p>
+                    <p class="feature-description">câmera integrada com sistema de áudio ativo, sensível a sons básicos, cancelamento de ruídos e com alta resposta de frequência áudio unidirecional</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="img/size.svg" alt=""></div>
+                    <h3>Dimensão</h3>
+                    <p class="feature-title">Tamanho que cabe na sua mão</p>
+                    <p class="feature-description">Altura: 18,34 cm<br>Profundidade: 13,62 cm<br>Comprimento: 11,04 cm</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="img/ia.svg" alt=""></div>
+                    <h3>Inteligência Artificial</h3>
+                    <p class="feature-title">Câmera com IA</p>
+                    <p class="feature-description">Com placas integradas com inteligência artificial, podendo reconhecer as pessoas que entram na sua casa pelo reconhecimento facial</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><img src="img/kosm.svg" alt=""></div>
+                    <h3>Kosmofull</h3>
+                    <p class="feature-title">Com entrega rápida e segura</p>
+                    <p class="feature-description">Com entrega feita pela Kosmofull, seu produto chega a mais rápido possível e com proteção total de dano danificado</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="avaliacoes-section"> <!-- Avaliações Section -->
+            <h2>Avaliações de clientes</h2>
+            <div class="avaliacoes-container-top"> <!-- Distribuição de estrelas e Imagens lado a lado -->
+                <div class="avaliacoes-top">
+                    <div class="rating-summary">
+                        <div class="nota-principal">
+                            <span class="numero-grande">4.7</span>
+                            <span class="texto-pequeno">de 5</span>
+                        </div>
+                        <div class="estrelas-grande">★★★★☆</div>
+                        <p class="total-avaliacoes">219 avaliações globais</p>
+                    </div>
+
+                    <!-- Distribuição de porcentagem -->
+                    <div class="distribuicao">
+                        <div class="linha-rating">
+                            <span class="num-estrelas">5 ⭐</span>
+                            <div class="barra-progress">
+                                <div class="preenchimento" style="width: 85%"></div>
+                            </div>
+                            <span class="percentual">85%</span>
+                        </div>
+                        <div class="linha-rating">
+                            <span class="num-estrelas">4 ⭐</span>
+                            <div class="barra-progress">
+                                <div class="preenchimento" style="width: 10%"></div>
+                            </div>
+                            <span class="percentual">10%</span>
+                        </div>
+                        <div class="linha-rating">
+                            <span class="num-estrelas">3 ⭐</span>
+                            <div class="barra-progress">
+                                <div class="preenchimento" style="width: 4%"></div>
+                            </div>
+                            <span class="percentual">4%</span>
+                        </div>
+                        <div class="linha-rating">
+                            <span class="num-estrelas">2 ⭐</span>
+                            <div class="barra-progress">
+                                <div class="preenchimento" style="width: 1%"></div>
+                            </div>
+                            <span class="percentual">1%</span>
+                        </div>
+                        <div class="linha-rating">
+                            <span class="num-estrelas">1 ⭐</span>
+                            <div class="barra-progress">
+                                <div class="preenchimento" style="width: 0%"></div>
+                            </div>
+                            <span class="percentual">0%</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="avaliacoes-imagens"> <!-- Carrossel de imagens das reviews -->
+                    <h3>Avaliações com imagens</h3>
+                    <div class="grid-imagens">
+                        <div class="thumb"><img src="img/cam.png" alt="Review foto" class="grid-img" data-lightbox><span class="thumb-rating">5★</span></div>
+                        <div class="thumb"><img src="img/cam2.png" alt="Review foto" class="grid-img" data-lightbox><span class="thumb-rating">5★</span></div>
+                        <div class="thumb"><img src="img/cam3.png" alt="Review foto" class="grid-img" data-lightbox><span class="thumb-rating">4★</span></div>
+                        <div class="thumb"><img src="img/cam4.png" alt="Review foto" class="grid-img" data-lightbox><span class="thumb-rating">5★</span></div>
+                    </div>
+                    <p class="ver-todas"><a href="#">Ver todas as fotos ›</a></p>
+                </div>
+            </div>
+
+            
+            <div class="reviews-list"> <!-- Reviews em lista -->
+                <h3>Opiniões em destaque</h3>
+                <p class="reviews-summary">198 comentários</p>
+                <p class="reviews-desc">Os produtos TECNOCAM são amplamente elogiados por seu excelente custo benefício e qualidade. Sendo considerados uma das melhores opções do mercado. Os consumidores destacam a facilidade em utilizar os produtos, alta qualidade de imagens e áudio, e entrega rápida com a KosmoFull.</p>
+                <p class="ai-note">Resumo de opiniões gerado por I.A</p>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-avatar">M</div>
+                        <div class="review-user-info">
+                            <span class="usuario-nome">MARCIO FERNANDES COELHO</span>
+                            <div class="review-meta">
+                                <span class="rating-stars">★★★★★</span>
+                                <span class="review-date">Avaliado no Brasil em 18 de outubro de 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <div class="review-content">
+                            <div class="review-titulo">Qualidade da imagem</div>
+                            <p class="review-texto">Entrega super rápido. Câmera original qualidade excelente e fácil instalação e configuração. Intelbras é diferente de tudo mesmo.</p>
+                        </div>
+                        <div class="review-imagens">
+                            <img src="img/cam.png" alt="Foto da review" class="review-img-small" data-lightbox>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-avatar">A</div>
+                        <div class="review-user-info">
+                            <span class="usuario-nome">Arthur Figueira da Silva</span>
+                            <div class="review-meta">
+                                <span class="rating-stars">★★★★★</span>
+                                <span class="review-date">Avaliado no Brasil em 15 de outubro de 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <div class="review-content">
+                            <div class="review-titulo">Melhor câmera.</div>
+                            <p class="review-texto">Câmera maravilhosa e com imagens muito nítidas.</p>
+                        </div>
+                        <div class="review-imagens">
+                            <img src="img/cam2.png" alt="Foto da review" class="review-img-small" data-lightbox>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-avatar">D</div>
+                        <div class="review-user-info">
+                            <span class="usuario-nome">Dayse Severoll</span>
+                            <div class="review-meta">
+                                <span class="rating-stars">★★★★★</span>
+                                <span class="review-date">Avaliado no Brasil em 27 de outubro de 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <div class="review-content">
+                            <div class="review-titulo">Ótima câmera!</div>
+
+                            <p class="review-texto">Ótima câmera da Intelbras! Ainda mais, que tem a função de vermos as imagens em 360 graus!</p>
+                        </div>
+                        <div class="review-imagens">
+                            <img src="img/cam3.png" alt="Foto da review" class="review-img-small" data-lightbox>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-avatar">A</div>
+                        <div class="review-user-info">
+                            <span class="usuario-nome">Arthur Figueira da Silva</span>
+                            <div class="review-meta">
+                                <span class="rating-stars">★★★★★</span>
+                                <span class="review-date">Avaliado no Brasil em 15 de outubro de 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-body">
+                        <div class="review-content">
+                            <div class="review-titulo">Melhor câmera.</div>
+                            <p class="review-texto">Câmera maravilhosa e com imagens muito nítidas.</p>
+                        </div>
+                        <div class="review-imagens">
+                            <img src="img/cam4.png" alt="Foto da review" class="review-img-small" data-lightbox>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-imagem" id="modalImagem"> <!-- Modal de imagem -->
+            <button class="botao-fechar">×</button>
+            <img class="imagem-modal" src="" alt="">
+        </div>
+    </main>
+
+    <footer class="footer"> <!--Footer-->
+    <div class="footer-container">
+        <!-- Redes Sociais no topo -->
+        <div class="footer-social">
+            <h3 class="social-title">Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" id="facebook">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tecnocam2025" class="social-icon1" target="_blank" id="instagram">
+                    <img src="img/ins.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" class="social-icon1" target="_blank" id="youtube">
+                    <img src="img/you.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/feed" class="social-icon" target="_blank" id="linkedin">
+                    <img src="img/link.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal do Footer -->
+        <div class="footer-content">
+            <!-- Coluna Institucional -->
+            <div class="footer-column">
+                <h3 class="footer-title">Institucional</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Sobre a Tecnocam</a></li>
+                    <li><a href="#" class="footer-link">Responsabilidade Social</a></li>
+                    <li><a href="#" class="footer-link">Meio Ambiente</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Políticas -->
+            <div class="footer-column">
+                <h3 class="footer-title">Políticas</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link">Políticas de Entrega</a></li>
+                    <li><a href="#" class="footer-link">Política de Troca e Devolução</a></li>
+                    <li><a href="#" class="footer-link">Política de Pagamento</a></li>
+                    <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Regulamentos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Atendimento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Fale Conosco</a></li>
+                    <li class="footer-contact">(55) 3281-9730 | tecnocam@</li>
+                    <li class="footer-contact">Seg/Sex - 8h00 às 17h30</li>
+                </ul>
+            </div>
+
+            <!-- Coluna Pagamento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"><img src="img/visa.png" alt=""></div>
+                    <div class="payment-icon mastercard"><img src="img/master.png" alt=""></div>
+                    <div class="payment-icon elo"><img src="img/elo.png" alt=""></div>
+                    <div class="payment-icon pix"><img src="img/pix.png" alt=""></div>
+                    <div class="payment-icon boleto"><img src="img/boleto.png" alt=""></div>
+                    <div class="payment-icon nubank"><img src="img/nua.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

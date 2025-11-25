@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6, span, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--bege-claro) !important;
+    color: var(--preto-carvao);
+    
+}
+body.dark-mode .help-content{
+    background-color: var(--background);
+}
+body.dark-mode .help-sidebar{
+    background-color: var(--background);
+}
+body.dark-mode .sidebar-menu a{
+    background: var(--bege-claro);
+    color: var(--verde-valor);
+    transition: all 0.3s ease;
+}
+body.dark-mode .user-avatar{
+    background-color: var(--bege-claro);
+    color: var(--kosmo-blue);
+}
+body.dark-mode .sidebar-menu a:hover,
+body.dark-mode .sidebar-menu a.active {
+    background: var(--verde-valor);
+    color: white;
+    box-shadow: var(--verde-valor) 0px 0px 10px;
+    transform: scale(1.03);
+}
+body.dark-mode .faq-question{
+    background-color: var(--background);
+}
+
+body.dark-mode .faq-answer{
+    background-color: var(--bege-claro);
+}
+
+body.dark-mode .btn-primary{
+    background-color: var(--background);
+    color: var(--verde-valor);
+}
+body.dark-mode .btn-primary:hover{
+    background-color: var(--background);
+    border: 1px solid var(--verde-valor);
+    box-shadow: var(--verde-valor) 0px 0px 5px;
+}
+body.dark-mode .back-button{
+    background-color: var(--kosmo-blue);
+    transition: all 0.3s ease;
+}
+body.dark-mode .back-button:hover{
+    background-color: var(--azul-titulo);
+    box-shadow: var(--azul-titulo) 0px 0px 10px;
+}
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #2c5aa0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-left:130px;
+    margin-top: 80px;
+    font-size: 15px;
+}
+        
+.back-button:hover {
+    background-color: #1e3f73;
+    transform: translateY(-2px);
+}
+        
+.back-icon {
+    width: 16px;
+    height: 16px;
+}    
+.help-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.help-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.help-header h1 {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 36px;
+    color: var(--azul-titulo);
+    margin-bottom: 10px;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+}
+
+.help-sidebar {
+    background: var(--bege-claro);
+    border-radius: 20px;
+    padding: 30px;
+    height: fit-content;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--cinza-areia);
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--dourado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 5px;
+}
+
+.user-email {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: var(--preto-carvao);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+    background: white;
+    color: var(--dourado);
+}
+
+.sidebar-menu .material-symbols-outlined {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.help-content {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: var(--sombra);
+}
+
+.help-search {
+    margin-bottom: 40px;
+}
+
+.search-box {
+    position: relative;
+    max-width: 500px;
+}
+
+.search-box .material-symbols-outlined {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid var(--cinza-areia);
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(209, 169, 84, 0.1);
+}
+
+.help-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.category-card {
+    background: var(--bege-claro);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--dourado);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--dourado);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+}
+
+.category-icon .material-symbols-outlined {
+    font-size: 30px;
+}
+
+.category-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.category-link {
+    color: var(--dourado);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.category-link:hover {
+    color: var(--verde-oliva);
+}
+
+.section-title {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 24px;
+    color: var(--azul-titulo);
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--dourado);
+    padding-bottom: 10px;
+}
+
+.faq-section {
+    margin-bottom: 50px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    border: 1px solid var(--cinza-areia);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    background: var(--bege-claro);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background: var(--cinza-areia);
+}
+
+.faq-question .material-symbols-outlined {
+    transition: transform 0.3s ease;
+    color: var(--dourado);
+}
+
+.faq-item.active .faq-question .material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.faq-item.active .faq-answer {
+    padding: 20px;
+    max-height: 200px;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: var(--preto-carvao);
+    line-height: 1.6;
+}
+
+.contact-section {
+    margin-bottom: 30px;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.contact-card {
+    background: var(--bege-claro);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--dourado);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+}
+
+.contact-icon .material-symbols-outlined {
+    font-size: 30px;
+}
+
+.contact-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--preto-carvao);
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    background: var(--preto-btn);
+    color: var(--verde-valor);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background: var(--verde-valor);
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .help-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .help-sidebar {
+        order: 2;
+    }
+    
+    .help-content {
+        order: 1;
+        padding: 20px;
+    }
+    
+    .help-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-box {
+        max-width: 100%;
+    }
+}

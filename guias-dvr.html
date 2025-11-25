@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guias para DVR/NVR - Tecnocam</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="suporte.css">
+    <link rel="stylesheet" href="guias.css">
+    <script src="./main.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="tecnocam"> <!--Parte de cima header-->
+        <img src="img/logo.png" alt="" class="logo">
+            <h1>Tecnocam</h1>
+        <div class="search">
+                <label for="searchInput">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <a href="suporte.html" rel="noopener noreferrer">
+                <img src="img/suport.svg" alt="" class="h-icon1">
+            </a>
+            <a href="login.html"><img src="img/login.svg" alt="" class="h-icon2"></a>
+            <a href="meus-pedidos.html"><img src="img/carrinho.svg" alt="" class="h-icon3"></a>
+        </div>
+
+        <div> <!--Navbar-->
+            <nav class="navbar"> 
+                <div class="menu-container">
+                    <img src="img/menu.svg" alt="menu" class="menu-icon">
+                    <div class="dropdown-menu">
+                        <a href="minha-conta.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">person</span>
+                            Minha Conta
+                        </a>
+                        <a href="meus-pedidos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">shopping_bag</span>
+                            Meus Pedidos
+                        </a>
+                        <a href="favoritos.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">favorite</span>
+                            Favoritos
+                        </a>
+                        <a href="ajuda.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">help</span>
+                            Ajuda
+                        </a>
+                        <a href="suporte.html" class="dropdown-item">
+                            <span class="material-symbols-outlined dropdown-icon">support_agent</span>
+                            Suporte Técnico
+                        </a>
+                        <button class="dropdown-item theme-toggle-btn" id="themeToggle">
+                            <span class="material-symbols-outlined dropdown-icon">dark_mode</span>
+                            Modo Escuro
+                        </button>
+
+                    </div>
+                </div>
+                <a href="#todas-categorias" class="nav-links">Todas as categorias</a>
+                <a href="#mais-vendidos" class="nav-links">Mais vendidos</a>
+                <a href="#casa-inteligente" class="nav-links">Casa Inteligente</a>
+                <a href="#interfones" class="nav-links">Interfones</a>
+                <a href="#cameras" class="nav-links">Câmeras</a>
+                <p>|</p>
+                <a href="#kits" class="nav-links">Kits</a>
+                <a href="#instalacao" class="nav-link">Instalação</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="index.html" class="breadcrumb-link"><img src="img/sair.svg" alt="Voltar"></a>
+    </div>
+
+    <main class="support-container">
+        <div class="guide-hero">
+            <div class="guide-hero-icon">
+                <span class="material-symbols-outlined">storage</span>
+            </div>
+            <h1>Guias para DVR/NVR</h1>
+            <p>Configuração de gravadores, armazenamento e gerenciamento de sistemas de gravação</p>
+        </div>
+
+        <section class="guides-category">
+            <h2 class="section-title">Instalação e Configuração Inicial</h2>
+            
+            <div class="guide-card-detailed">
+                <span class="difficulty medio">Médio - 30 min</span>
+                <h3>Instalação Básica de DVR</h3>
+                <p>Configuração completa de um gravador digital para câmeras analógicas.</p>
+                
+                <div class="tools-list">
+                    <h4>📋 O que você vai precisar:</h4>
+                    <ul>
+                        <li>DVR Tecnocam</li>
+                        <li>HD para gravação (não incluso)</li>
+                        <li>Câmeras analógicas compatíveis</li>
+                        <li>Cabo coaxial e fonte de alimentação</li>
+                        <li>Monitor com entrada HDMI/VGA</li>
+                        <li>Mouse USB</li>
+                    </ul>
+                </div>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Instale o HD:</strong> Abra o DVR e instale o disco rígido (se necessário)</li>
+                    <li><strong>Conecte as câmeras:</strong> Use cabos BNC nos conectores "CAM IN"</li>
+                    <li><strong>Alimentação das câmeras:</strong> Conecte cada câmera à fonte de energia</li>
+                    <li><strong>Conexão do monitor:</strong> Ligue HDMI ou VGA ao DVR e monitor</li>
+                    <li><strong>Energia do DVR:</strong> Conecte o adaptador de energia</li>
+                    <li><strong>Mouse USB:</strong> Conecte mouse para configuração</li>
+                    <li><strong>Inicialização:</strong> Ligue o DVR e aguarde boot completo</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed">
+                <span class="difficulty medio">Médio - 40 min</span>
+                <h3>Configuração de NVR para Câmeras IP</h3>
+                <p>Como configurar um gravador de rede para câmeras IP.</p>
+                
+                <div class="tools-list">
+                    <h4>📋 O que você vai precisar:</h4>
+                    <ul>
+                        <li>NVR Tecnocam</li>
+                        <li>HD para gravação</li>
+                        <li>Câmeras IP compatíveis</li>
+                        <li>Roteador/switch de rede</li>
+                        <li>Cabo Ethernet (CAT5e ou superior)</li>
+                        <li>Monitor e mouse</li>
+                    </ul>
+                </div>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Instalação do HD:</strong> Monte o disco rígido no NVR</li>
+                    <li><strong>Conexão de rede:</strong> Ligue o NVR ao roteador via Ethernet</li>
+                    <li><strong>Câmeras IP:</strong> Conecte cada câmera à rede (Wi-Fi ou cabo)</li>
+                    <li><strong>Monitor e mouse:</strong> Conecte para configuração inicial</li>
+                    <li><strong>Ligue o NVR:</strong> Inicialize o sistema</li>
+                    <li><strong>Configuração automática:</strong> NVR deve detectar câmeras automaticamente</li>
+                    <li><strong>Formatação do HD:</strong> Siga prompts para formatar o disco</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="guides-category">
+            <h2 class="section-title">Configuração de Gravação</h2>
+            
+            <div class="guide-card-detailed">
+                <span class="difficulty medio">Médio - 25 min</span>
+                <h3>Configuração de Gravação Contínua</h3>
+                <p>Como programar gravação 24/7 para máxima segurança.</p>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Acesse menu principal:</strong> Clique direito no mouse → "Main Menu"</li>
+                    <li><strong>Configuração de gravação:</strong> Vá em "Record" → "Schedule"</li>
+                    <li><strong>Selecione modo:</strong> Escolha "Continuous" para gravação contínua</li>
+                    <li><strong>Configure horários:</strong> Defina 00:00-23:59 para todos os dias</li>
+                    <li><strong>Qualidade de gravação:</strong> Ajuste resolução e taxa de frames</li>
+                    <li><strong>Aplique configurações:</strong> "Apply" para salvar</li>
+                    <li><strong>Verifique status:</strong> Ícone de gravação deve aparecer no display</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed">
+                <span class="difficulty medio">Médio - 30 min</span>
+                <h3>Configuração de Gravação por Detecção de Movimento</h3>
+                <p>Otimize espaço em disco gravando apenas quando houver atividade.</p>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Menu principal:</strong> Clique direito → "Main Menu"</li>
+                    <li><strong>Detecção de movimento:</strong> Vá em "Alarm" → "Motion Detect"</li>
+                    <li><strong>Selecione câmeras:</strong> Escolha quais câmeras terão detecção</li>
+                    <li><strong>Ajuste sensibilidade:</strong> Nível 60-80 para equilíbrio ideal</li>
+                    <li><strong>Defina área de detecção:</strong> Selecione áreas importantes</li>
+                    <li><strong>Configure gravação:</strong> Vá em "Record" → "Schedule" → "Motion"</li>
+                    <li><strong>Teste a detecção:</strong> Passe na frente da câmera para verificar</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="guides-category">
+            <h2 class="section-title">Acesso Remoto e Rede</h2>
+            
+            <div class="guide-card-detailed">
+                <span class="difficulty dificil">Avançado - 45 min</span>
+                <h3>Configuração de Acesso Remoto via P2P</h3>
+                <p>Acesse seu DVR/NVR de qualquer lugar usando tecnologia P2P.</p>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Ative DHCP:</strong> No DVR, vá em "Network" → "TCP/IP" → DHCP ON</li>
+                    <li><strong>Anote ID do dispositivo:</strong> Vá em "Network" → "P2P" e anote o ID</li>
+                    <li><strong>Baixe app mobile:</strong> Instale "Tecnocam Pro" no smartphone</li>
+                    <li><strong>Adicione dispositivo:</strong> Toque em "+" → "Adicionar por ID"</li>
+                    <li><strong>Insira o ID:</strong> Digite o código do dispositivo</li>
+                    <li><strong>Configure usuário:</strong> Crie login e senha para acesso</li>
+                    <li><strong>Teste acesso externo:</strong> Use dados móveis para verificar</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed">
+                <span class="difficulty dificil">Avançado - 60 min</span>
+                <h3>Configuração de Port Forwarding para Acesso DDNS</h3>
+                <p>Acesso remoto avançado usando endereço fixo.</p>
+                
+                <div class="tools-list">
+                    <h4>⚠️ Requisitos:</h4>
+                    <ul>
+                        <li>Acesso administrativo ao roteador</li>
+                        <li>IP fixo ou serviço DDNS</li>
+                        <li>Conhecimento de redes</li>
+                    </ul>
+                </div>
+                
+                <h4>🔧 Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>IP fixo para DVR:</strong> Configure IP estático no DVR</li>
+                    <li><strong>Portas necessárias:</strong> HTTP: 80, Serviço: 37777, TCP: 34567</li>
+                    <li><strong>Acesse roteador:</strong> 192.168.1.1 no navegador</li>
+                    <li><strong>Port Forwarding:</strong> Vá em "Advanced" → "NAT Forwarding"</li>
+                    <li><strong>Adicione regras:</strong> Para cada porta, aponte para IP do DVR</li>
+                    <li><strong>Configure DDNS:</strong> No DVR, vá em "Network" → "DDNS"</li>
+                    <li><strong>Teste externamente:</strong> Acesse via IP público ou domínio DDNS</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="guides-category">
+            <h2 class="section-title">Solução de Problemas</h2>
+            
+            <div class="guide-card-detailed">
+                <span class="difficulty facil">Fácil - 15 min</span>
+                <h3>DVR/NVR Não Grava</h3>
+                <p>Soluções para quando o gravador para de gravar.</p>
+                
+                <h4>🔧 Solução Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Verifique status do HD:</strong> Menu → "HDD Management"</li>
+                    <li><strong>Espaço em disco:</strong> Verifique se há espaço disponível</li>
+                    <li><strong>Formatação:</strong> Se necessário, formate o disco</li>
+                    <li><strong>Configuração de gravação:</strong> Verifique se está habilitada</li>
+                    <li><strong>Horário programado:</strong> Confirme período de gravação</li>
+                    <li><strong>Reinicie o sistema:</strong> Desligue e ligue o DVR/NVR</li>
+                    <li><strong>Teste outro HD:</strong> Possível falha no disco rígido</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed">
+                <span class="difficulty medio">Médio - 25 min</span>
+                <h3>Problemas de Acesso Remoto</h3>
+                <p>Quando não consegue acessar o sistema remotamente.</p>
+                
+                <h4>🔧 Solução Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Verifique conexão local:</strong> Acesse pelo monitor conectado</li>
+                    <li><strong>Teste rede interna:</strong> Acesso via IP local funciona?</li>
+                    <li><strong>Configurações de rede:</strong> DHCP ativo ou IP estático correto</li>
+                    <li><strong>Portas abertas:</strong> Verifique port forwarding no roteador</li>
+                    <li><strong>Firewall/antivírus:</strong> Desative temporariamente para teste</li>
+                    <li><strong>Atualize firmware:</strong> Verifique atualizações disponíveis</li>
+                    <li><strong>Reset de rede:</strong> Restaure configurações padrão de rede</li>
+                </ol>
+            </div>
+
+            <div class="guide-card-detailed">
+                <span class="difficulty medio">Médio - 20 min</span>
+                <h3>Câmeras Não Aparecem no DVR/NVR</h3>
+                <p>Soluções para quando câmeras não são detectadas.</p>
+                
+                <h4>🔧 Solução Passo a Passo:</h4>
+                <ol class="steps-list">
+                    <li><strong>Verifique conexões físicas:</strong> Cabos bem conectados</li>
+                    <li><strong>Alimentação das câmeras:</strong> Todas têm energia?</li>
+                    <li><strong>Pesquisa automática:</strong> Menu → "Camera" → "Auto Search"</li>
+                    <li><strong>Configuração manual:</strong> Adicione câmeras manualmente se necessário</li>
+                    <li><strong>Protocolo correto:</strong> Verifique compatibilidade de protocolo</li>
+                    <li><strong>Reset de câmera:</strong> Reinicie câmeras problemáticas</li>
+                    <li><strong>Teste em outro canal:</strong> Mude câmera de canal/porta</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="dvr-specs">
+            <h2 class="section-title">Especificações Técnicas</h2>
+            <div class="specs-comparison">
+                <div class="spec-card">
+                    <h4>🔄 DVR (Digital Video Recorder)</h4>
+                    <ul>
+                        <li><strong>Câmeras:</strong> Analógicas (CVBS, AHD, TVI, CVI)</li>
+                        <li><strong>Conexão:</strong> Cabo coaxial + alimentação</li>
+                        <li><strong>Resolução:</strong> Até 4MP (dependendo do modelo)</li>
+                        <li><strong>Compressão:</strong> H.264/H.265</li>
+                        <li><strong>Indicado para:</strong> Sistemas existentes, upgrades</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h4>🌐 NVR (Network Video Recorder)</h4>
+                    <ul>
+                        <li><strong>Câmeras:</strong> IP (Wi-Fi ou Ethernet)</li>
+                        <li><strong>Conexão:</strong> Rede (cabo ou wireless)</li>
+                        <li><strong>Resolução:</strong> Até 8MP+</li>
+                        <li><strong>Compressão:</strong> H.265+, Smart Codec</li>
+                        <li><strong>Indicado para:</strong> Novas instalações, alta qualidade</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-contact">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <span class="material-symbols-outlined">support_agent</span>
+                </div>
+                <div class="contact-info">
+                    <h3>Configuração Complexa?</h3>
+                    <p>Nossos técnicos especializados em DVR/NVR podem fazer configuração remota ou presencial</p>
+                    <div class="contact-buttons">
+                        <button class="btn-primary" onclick="window.open('https://api.whatsapp.com/send?phone=554188046891&text=Preciso de ajuda com DVR/NVR', '_blank')">
+                            Suporte Técnico
+                        </button>
+                        <button class="btn-secondary" onclick="window.location.href='suporte.html'">
+                            Voltar ao Suporte
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"> <!--Footer-->
+    <div class="footer-container">
+        <!-- Redes Sociais no topo -->
+        <div class="footer-social">
+            <h3 class="social-title">Siga-nos</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank" id="facebook">
+                    <img src="img/face.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/tecnocam2025" class="social-icon1" target="_blank" id="instagram">
+                    <img src="img/ins.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com" class="social-icon1" target="_blank" id="youtube">
+                    <img src="img/you.png" alt="YouTube">
+                </a>
+                <a href="https://www.linkedin.com/feed" class="social-icon" target="_blank" id="linkedin">
+                    <img src="img/link.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+        <!-- Conteúdo Principal do Footer -->
+        <div class="footer-content">
+            <!-- Coluna Institucional -->
+            <div class="footer-column">
+                <h3 class="footer-title">Institucional</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Sobre a Tecnocam</a></li>
+                    <li><a href="#" class="footer-link">Responsabilidade Social</a></li>
+                    <li><a href="#" class="footer-link">Meio Ambiente</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Políticas -->
+            <div class="footer-column">
+                <h3 class="footer-title">Políticas</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link">Políticas de Entrega</a></li>
+                    <li><a href="#" class="footer-link">Política de Troca e Devolução</a></li>
+                    <li><a href="#" class="footer-link">Política de Pagamento</a></li>
+                    <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link">Regulamentos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna Atendimento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Fale Conosco</a></li>
+                    <li class="footer-contact">(55) 3281-9730 | tecnocam@</li>
+                    <li class="footer-contact">Seg/Sex - 8h00 às 17h30</li>
+                </ul>
+            </div>
+
+            <!-- Coluna Pagamento -->
+            <div class="footer-column">
+                <h3 class="footer-title">Pagamento</h3>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"><img src="img/visa.png" alt=""></div>
+                    <div class="payment-icon mastercard"><img src="img/master.png" alt=""></div>
+                    <div class="payment-icon elo"><img src="img/elo.png" alt=""></div>
+                    <div class="payment-icon pix"><img src="img/pix.png" alt=""></div>
+                    <div class="payment-icon boleto"><img src="img/boleto.png" alt=""></div>
+                    <div class="payment-icon nubank"><img src="img/nua.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=554188046891&text=Quero%20fazer%20um%20agendamento%20hoje!" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+            <img src="img/whatssapp.svg" alt="btn whatssapp"><span class="tooltip-text">Agende seu horário</span>
+        </a>
+    </div>
+</body>
+</html>
